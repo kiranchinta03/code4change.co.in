@@ -1,0 +1,436 @@
+<html>
+<head>
+<title>PLSQL - Collections</title>
+	<link rel="shortcut icon" href="../../../images/icon.ico" type="image/ico">
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+<link rel="stylesheet" href="https://code.getmdl.io/1.1.3/material.red-light_blue.min.css" />
+<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:300,400,500,700" type="text/css">
+<script defer src="../../../mdl/material.min.js"></script>
+<style>
+	.demo-card.mdl-card{width:950px;overflow:hidden;text-decoration:none;}
+	.demo-card > .mdl-card__title{color:#fff;height:auto;background:url('images/oracle.png') center/cover;text-decoration:none;}
+	.demo-card > .mdl-card__title a{color: inherit;text-decoration:none;}
+	.demo-card > .mdl-card__menu{color:#fff;text-decoration:none;}	
+	pre{font-family:inherit;font-size:15px}
+</style>
+
+</head>
+
+<body>
+		<div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+		<header class="mdl-layout__header">
+			<div class="mdl-layout__header-row">
+				<span class="mdl-layout-title"><a href="../../../index.html"><img src="../../../images/icon.ico" width="50" height="50"></a></span>
+				<div class="mdl-layout-spacer"></div>
+				
+				
+				</div>
+		</header>
+		<div class="mdl-layout__drawer" style="margin-left:-38px;width:280px">
+			<span class="mdl-layout-title"><img src="../../../images/banner.png" width="240" height="65"></span>
+			<nav class="mdl-navigation" style="margin-left=-20px">
+				<a class="mdl-navigation__link" href="../../../c.html"><img src="../../../images/logo/c.png" width="35" height="35">   C LANGUAGE</a>
+				<a class="mdl-navigation__link" href="../../../c++.html"><img src="../../../images/logo/c++.png" width="35" height="35">    C++ PROGRAMING</a>
+				<a class="mdl-navigation__link" href="../../../java.html"><img src="../../../images/logo/java.png" width="35" height="35">  JAVA</a>
+				<a class="mdl-navigation__link" href="../../../oracle.html"><img src="../../../images/logo/oracle.png" width="30" height="30"> ORACLE</a>
+				<a class="mdl-navigation__link" href="../../../python.html"><img src="../../../images/logo/python.png" width="30" height="30"> PYTHON</a>
+				<a class="mdl-navigation__link" href="../../../webdev.html"><img src="../../../images/logo/webdev.png" width="35" height="35"> WEB DEVELOPMENT</a>
+				<a class="mdl-navigation__link" href="../../../oracle_ebs/docs/00.html"><img src="../../../images/logo/o_ebs.png" width="35" height="35"> ORACLE_EBS</a>
+			</nav>
+		</div>
+	
+	<main >	
+		<table class="mdl-data-table mdl-js-data-table mdl-data-table--selectable mdl-shadow--2dp" style="margin-top:25px;margin-left:100px;margin-bottom:15px;widht:12px">
+  		<thead> </thead>
+  		<tbody >
+    		<tr> <td class="mdl-data-table__cell--non-numeric"><a href="01.html" style="text-decoration:none;color:inherit">	1. Blocks</a></td></tr>
+    		<tr> <td class="mdl-data-table__cell--non-numeric"><a href="02.html" style="text-decoration:none;color:inherit">	2. Basics</a></td></tr>
+    		<tr> <td class="mdl-data-table__cell--non-numeric"><a href="03.html" style="text-decoration:none;color:inherit">	3. Data Types</a></td></tr>
+		<tr> <td class="mdl-data-table__cell--non-numeric"><a href="04.html" style="text-decoration:none;color:inherit">	4. Control Statements</a></td></tr>
+    		<tr> <td class="mdl-data-table__cell--non-numeric"><a href="05.html" style="text-decoration:none;color:inherit">	5. Loops</a></td> </tr>
+    		<tr> <td class="mdl-data-table__cell--non-numeric"><a href="06.html" style="text-decoration:none;color:inherit">	6. Cursors</a></td> </tr>
+    		<tr> <td class="mdl-data-table__cell--non-numeric"><a href="07.html" style="text-decoration:none;color:inherit"> 7. SubTopics in Cursors</a></td> </tr>
+    		<tr> <td class="mdl-data-table__cell--non-numeric"><a href="08.html" style="text-decoration:none;color:inherit">	8. RefCursor</a></td></tr>
+		<tr> <td class="mdl-data-table__cell--non-numeric"><a href="09.html" style="text-decoration:none;color:inherit">	9. PreDefined Exceptions</a></td></tr>
+    		<tr> <td class="mdl-data-table__cell--non-numeric"><a href="10.html" style="text-decoration:none;color:inherit">	10. UserDefined Exceptions</a></td></tr>
+    		<tr> <td class="mdl-data-table__cell--non-numeric"><a href="11.html" style="text-decoration:none;color:inherit">	11. NonPredefined Exceptions</a></td> </tr>
+		<tr> <td class="mdl-data-table__cell--non-numeric"><a href="12.html" style="text-decoration:none;color:inherit">	12. Procedures</a></td> </tr>
+    		<tr> <td class="mdl-data-table__cell--non-numeric"><a href="13.html" style="text-decoration:none;color:inherit">	13. Functions</a></td> </tr>
+    		<tr> <td class="mdl-data-table__cell--non-numeric"><a href="14.html" style="text-decoration:none;color:inherit">	14. Packages</a></td></tr>
+		<tr> <td class="mdl-data-table__cell--non-numeric"><a href="15.html" style="text-decoration:none;color:inherit">	15. Misc</a></td></tr>
+    		<tr> <td class="mdl-data-table__cell--non-numeric"><a href="16.html" style="text-decoration:none;color:inherit">	16. Triggers</a></td> </tr>
+    		<tr> <td class="mdl-data-table__cell--non-numeric"><a href="17.html" style="text-decoration:none;color:inherit"><font size="3"><b>			17. Collections</a></td> </tr>
+  		<tr> <td class="mdl-data-table__cell--non-numeric"><a href="18.html" style="text-decoration:none;color:inherit">			18. Bulk</a></td> </tr>
+		<tr> <td class="mdl-data-table__cell--non-numeric"><a href="19.html" style="text-decoration:none;color:inherit">			19. Misc</a></td> </tr>
+  		<tr> <td class="mdl-data-table__cell--non-numeric"><a href="20.html" style="text-decoration:none;color:inherit">			20. Pragma Autonomous Transaction</a></td> </tr>
+  		</tbody>
+		</table>
+	
+		<table class="mdl-data-table mdl-js-data-table mdl-data-table--selectable mdl-shadow--2dp" style="position:absolute;margin-top:-977px;margin-left:384px;width:955px;">
+  		<thead> </thead>
+  		<tbody    		<tr> <td class="mdl-data-table__cell--non-numeric"><center><font size="5"><b>17. Collections</b></font></center></td></tr>
+		</tbody>
+		</table>
+		
+		<div class="page-content" style="position:absolute;margin-top:-930px;margin-left:370px;">
+				<div class="mdl-grid">
+					<div class="mdl-cell mdl-cell--10col" style="width:1500px;">
+					<div class="mdl-card mdl-shadow--2dp demo-card" style="height:auto">
+	<p><pre>
+	<b>Collections</b>
+		Oracle server supports fallowing types
+			i.Pl/sql record(discussed in datatypes)
+			ii.Index by table or pl/sql table or associate arrays
+			iii.Nested tables
+			iv.Varrays
+			v.Ref cursors(discussed in cursors)
+
+	1.Index by table
+	•This is a user defined data type, which is used to store multiple data items in to single unit, basically it is unconstrained table
+	•Generally these tables are used to improve performance of application because these tables are stored in memory area that’s 
+	why these tables are also called as memory tables
+	•Basically these tables contains key value pairs i.e., value field is stored in actual data and key field stored in indexes
+	•Key field values are either integer or char and also these values or either +ve or –ve
+	•These indexes key behave like a primary key i.e., they don’t allow duplicate and null values. Basically this key data type is binary_integer
+	•Index by table having fallowing collection methods
+		1.Exists
+		2.First
+		3.Last
+		4.Prior
+		5.Next
+		6.Count
+		7.Delete (range of indexes)
+
+	<b>Ex:1</b>
+		Declare
+		Type t1 is table of number (10) index by binary_integer;
+		V1 	t1;
+		Begin
+		V1(1):=10;
+		V1(2):=20;
+		V1(3):=30;
+		V1(4):=40;
+		V1(5):=50;
+		Dbms_output.put_line (v1(3));
+		Dbms_output.put_line (v1.first);
+		Dbms_output.put_line (v1.last);
+		Dbms_output.put_line (v1.prior (3));
+		Dbms_output.put_line (v1.next (2));
+		Dbms_output.put_line (v1.count);
+		End;
+
+	<b>Ex-2:</b>
+		Declare
+		Type t2 is table of number (10) index by binary_integer;
+		V1 	t2;
+		Begin
+		V1(1):=10;
+		V1(2):=20;
+		V1(3):=30;
+		V1(4):=40;
+		V1(5):=50;
+		Dbms_output.put_line (v1.count);
+		V1.delete (1, 3);
+	
+		Dbms_output.put_line (v1.count);
+		V1.delete (5);
+		Dbms_output.put_line (v1.count);
+		V1.delete;
+		Dbms_output.put_line (v1.count);
+		End;
+
+	Q: write a pl/sql program to get all employee names from emp table and store it into index by table and display from index by table
+	Prgm:
+		Declare
+		Type t3 is table by varchar2 (10) index by binary_integer;
+		V1	t3;
+		Cursor c1 is select ename from emp;
+		N 	number(5):=1;
+		Begin
+			Open c1;
+			Loop
+			Fetch c1 into v1(n);
+			Exit when c1%notfound;
+			N:=n+1;
+			End loop;
+			Close c1;
+	
+			For I in v1.first..v1.last
+			Loop
+			Dbms_output.put_line (v1(i));
+			End loop;
+		End;
+
+	Prgm:
+		Declare
+		Type t4 is table of varchar2 (10) index by binary_integer;
+		V1 t4;
+		Begin
+			Select ename bulk collect into v1 from emp;
+			For I in v1.first..v1.last
+			Loop
+			Dbms_output.put_line (v1 (i));
+			End loop;
+		End;
+
+
+
+	Prgm:
+		Declare
+		Type t5 is  table of date index by binary_integer;
+		V1	t5;
+		Begin
+		For I in 1..10
+		Loop
+		V1.(i):=sysdate+1;
+		End loop;
+		For I in v1.first..v1.last
+		Loop
+		Dbms_output.put_line (v1 (i));
+		End loop;
+		End;
+
+		
+	Q: write a pl/sql program to retrieve all joining dates from emp table and store it into index by table and display content from index by table?
+	Prm:
+		Declare
+		Type t6 table of date index by binary integer
+		V1 t6;
+		Cursor c1 select hire date from emp;
+		N	number(2):=1;
+		begin
+		open c1;
+		loop
+		Fetch c1 into v1(n);
+		Exit when c1%notfound;
+		N:=n+1;
+		End loop;
+		Close c1;
+		For I in v1.first..v1.last
+		Loop
+		Dbms_output.put_line (v1(i));
+		End loop;
+		End;
+
+	Prgm:
+		Declare
+			Type t7 is table of date index by binary_integer;
+			V1 t5;
+		Begin
+			Select hiredate bulk collect into v1 from emp;
+			For I in v1.first..v1.last
+			Loop
+			Dbms_output.put_line (v1(i));
+			End loop;
+		End;
+
+	Ex-1:
+		Declare
+			Type t8 is table of varchar (10) index by varchar2 (10);
+			V1	t8;
+			X	varchar2 (10);
+		Begin
+			V1 ('a'):='ARUN';
+			V1 ('b'):='AJAY';
+			V1 ('c'):='CHANU';
+			X:=a;
+			Loop
+			Dbms_output.put_line (v1(x));
+			X:=v1.next(x);
+			Exit when x is null;
+			End loop;
+		End;
+
+	Ex-2:
+		Declare
+			Type t9 is table of emp%rowtype index by binary_integer;
+			V1	t9;
+			X	number (5);
+		Begin
+			Select * bulk collect into v1 from emp;
+			X:=1;
+			Loop
+			Dbms_output.put_line (v1(x).empno||','||v1(x).ename…);
+			X:=v1.next (x);
+			Exit when x is null;
+			End loop;
+		End;
+					(OR)
+		
+
+		Declare
+			Type t10 is table of emp%rowtype index by binary_integer;
+			V1	t10;
+		Begin
+			Select * bulk collect into v1 from emp;
+			For I in v1.first..v1.last
+			Loop
+			Dbms_output.put_line (v1(x).empno||','||v1(x).ename);
+			End loop;
+		End;
+	
+	<b>2.NESTED TABLES</b>
+		=>This is also user defined datatype which is used to store multiple data items in a single unit but before 
+		are storing actual data we must initialize the data while using constructor.
+		=>Here constructor name is same as type name. generally we are not allow to store index by tables permanently 
+		into database, to overcome this problem they are introduced nested tables, to extension of index by tables
+		=>These user defined datatype store permanently into database using sql
+		=>In index by tables we cannot add or remove indexes, where as in nested tables we can add or remove the indexes
+		using extend, trim collection methods.
+		=>In nested tables we can allocate the memory explicitly while using  extend method
+
+	Synt:
+		Type type_name is table of datatype (size)
+		Variable_name type_name :=	type_name ();---> constructor name
+
+	Ex-1:		declare
+			Type 	t1 is table of number (10);
+				V1 t1:=t1();
+			Begin
+				V1.extend(100);
+				V1(100):=10;
+				Dbms_output.put_line (v(100));
+			End
+	Ex-2
+			Declare 
+				Type t2 is table of number (10);
+				V1 t2:=t2 (10, 20, 30, 40, 50);
+			Begin
+				Dbms_output.put_line (v1.first);
+				Dbms_output.put_line (v1.last);
+				Dbms_output.put_line (v1.prior (3));
+				Dbms_output.put_line (v1.next (3));
+				Dbms_output.put_line (v1.count);
+				Dbms_output.put_line (v1 (3));
+				For I in v1.first ..v1.last
+				Loop
+				Dbms_output.put_line (v1 (i));
+				End loop;
+			End;
+
+	Ex-3:
+			Declare 
+				Type t3 is table of number (10);
+				V1 t3:=t3 (10, 20, 30, 40, 50);
+			Begin
+				V1.trim (3);
+				For I in v1.first..v1.last
+				Loop
+				Dbms_output.put_line (v1 (1));
+				End loop;
+			End;
+
+	Ex-4:
+			Declare
+				Type t4 is table of number (10);
+				V1 t4
+				V2 t4:=t4 ();
+			Begin
+				If v1 is null then
+				Dbms_output.put_line (‘v1 is null)’;
+				Else
+				Dbms_output.put_line (‘v1 is not null)’;
+				End if;
+				If v2 is null then
+				Dbms_output.put_line (‘v2 is null)’;
+				Else
+				Dbms_output.put_line (‘v2 is not null)’;
+				End if;
+			End;
+
+
+
+	Q: write a pl/sql program to get all employee names from emp table and store it to nested table and display data from nested tables
+	Prgm:
+		Declare
+		Type t5 is table of varchar2 (10);
+		V1 t5:=t5();
+		Cursor c1 is select ename from emp;	
+		N number (5):=1;
+		Begin	
+		For I in c1
+		Loop
+		V1. extend();
+		V(n):=i.ename;
+		N:=n+1;
+		End loop;
+		For I in v1.first..v1.last
+		Loop
+		Dbms_output.put_line(v(i));
+		End loop;
+		End; 
+					(OR)
+
+	Prgm:
+		Declare
+			Type t5 is table of varchar2 (10);
+			V1 t5:=t5();
+		Begin
+			Select ename bulk collect into v1 from emp 
+			For I in v1.first..v1.last
+			Loop
+			Dbms_output.put_line (v1(i));
+			End loop;
+		End;
+
+	Prgm:
+		Declare
+			Type t6 is table of emp%rowtype;
+			V1 t6:=t6();
+		Begin
+			Select * bulk collect into v1 from emp;
+			For I in v1.first..v1.last;
+			Loop
+			Dbms_output.put_line (‘v1 (i).ename||’,’||v1(i).empno)’;
+			End loop;
+		End;
+		
+	3.VARRAYS
+		=>This is also user defined data types which are used to store multiple data types in single unit, but 
+		before that we are storing actual data we must initialize the data while using constructor 
+		=>These user defined types stored permanently into database using sql
+		=>Basically we are using Varrays for retrieving the huge data.
+	Synt:
+		Type type_name is varray(max size) of datatype(size);
+		variable_name:=type_name();
+	
+	Prgm:
+		Declare type t1 is varrary (50) is emp%rowtype;
+		V1 t1:=t1();
+		Beign
+		Select * bulk collect into v1 from emp;
+		For I in v1.first..v1.last
+		Loop
+		Dbms_output.put_line (v1(i).empno||’,’||v1(i).ename);
+		End loop;
+		End;
+	
+	Q: how to store these user defined types in database
+	A:	create type t1 is table of number(100);
+		<img src="../../../images/table6.jpg">
+
+	</pre></p>		
+					</div>	
+					</div>				
+				</div>
+				</div>
+		</main>
+	
+
+		<footer class="mdl-mini-footer" style="margin-top:6200px;" >
+			<div class="mdl-mini-footer--left-section" style="margin-top:-15px;">
+				<div class="mdl-logo"><b>Fallow us on</b></div>
+				<ul class="mdl-mini-footer--link-list" style="margin-top:-15px;margin-left:105px;">
+					<li><a href="https://facebook.com/c4c.ady" style="text-decoration:none;">	<img src="../../../images/facebook.png" 	width="35" height="35" onmouseover="this.src='../../../images/social/facebook.png'" onmouseout="this.src='../../../images/facebook.png'" style="position:relative;bottom:-12px"></a></li>
+					<li><a href="https://twitter.com/c4c_ady" style="text-decoration:none;">   	<img src="../../../images/twitter.png" 	width="35" height="35" onmouseover="this.src='../../../images/social/twitter.png'" onmouseout="this.src='../../../images/twitter.png'" style="position:relative;bottom:-12px"></a>  </li>
+					<li><a href="https://www.youtube.com/channel/UCDjj2kpaHyDbC9jpD1tEJ4Q" >	<img src="../../../images/youtube.png"  	width="35" height="35" onmouseover="this.src='../../../images/social/youtube.png'" onmouseout="this.src='../../../images/youtube.png'" style="position:relative;bottom:-12px"></a></li>
+					<li><a href="https://instagram.com/c4c_ady" style="text-decoration:none;">	<img src="../../../images/instagram.png" width="35" height="35" onmouseover="this.src='../../../images/social/instagram.png'" onmouseout="this.src='../../../images/instagram.png'" style="position:relative;bottom:-12px"></a></li>
+				</ul>
+			</div>
+		</footer>
+
+	</div>
+
+
+</body>
+</html>

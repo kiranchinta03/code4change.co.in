@@ -1,0 +1,148 @@
+<html>
+<head>
+<title>HTML5 - Questions</title>
+<script type="text/javascript" src="../../../js/jquery-3.1.0.min.js"></script>
+<script type="text/javascript">
+$(document).ready(function(e){
+	$('div main nav ul li').click(function(){
+		$(this).toggleClass('tap');
+	});
+});
+
+</script>
+<link rel="shortcut icon" href="../../../images/icon.ico" type="image/ico">
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+<link rel="stylesheet" href="https://code.getmdl.io/1.2.1/material.orange-teal.min.css" />
+<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:300,400,500,700" type="text/css">
+<script defer src="../../../mdl/material.min.js"></script>
+<style>
+	.demo-card.mdl-card{width:950px;overflow:hidden;text-decoration:none;}
+	.demo-card > .mdl-card__title{color:#fff;height:auto;background:url('images/oracle.png') center/cover;text-decoration:none;}
+	.demo-card > .mdl-card__title a{color: inherit;text-decoration:none;}
+	.demo-card > .mdl-card__menu{color:#fff;text-decoration:none;}	
+	pre{font-family:inherit;font-size:15px}
+	p{margin:0px;padding:0px;}
+	.mdl-layout mdl-js-layout mdl-layout--fixed-header mdl-mini-footer{margin-bottom:0px;clear:both;}
+	footer img:hover{transform:scale(1.2)}
+
+</style>
+<style>.arrow{float:left}</style>
+<style>
+*{padding:0;margin:0;}	
+a{text-decoration:none;}
+	li{list-style:none;}
+	div main nav{width:300px;background:white;box-shadow: 0px 0px 3px;}
+	div main nav ul ul {background:#fee084}
+	div main nav ul ul a:before{content:'\203A';margin-right:20px;}
+	div main nav a{display:block; padding: 10px 0 10px 20px;color:black;border-bottom:1.5px solid black}
+	div main nav a:hover{background:#03A9F4;}
+	div main nav ul ul{display:none}
+	div main nav ul li:hover ul{display:block}
+	div main nav ul span:after{content:'\203A';float:right;margin-right:20px;-webkit-transform:rotate(90deg);-moz-transform:rotate(90deg)}
+</style>
+<style>
+pre.prettyprint.tryit {min-height:37px;margin-left:10px;margin-right:10px;font-family:calibri; background: #eee url(/html/images/try-it.jpg) top right no-repeat !important}div.feature-box div.feature-box-icon, .col-md-3 .course-box, li.heading, div.footer-copyright { background: #88c53a url(/images/pattern.png) repeat center center !important;}
+.sub-main-menu .sub-menuu div:hover, .sub-main-menu .viewall, header nav ul.nav-main li a:hover, button.btn-responsive-nav, header div.search button.btn-default { background: #88c53a !important;}
+.submenu-item{ border-bottom: 2px solid #88c53a !important; border-top: 2px solid #88c53a !important; }
+</style>
+</head>
+
+<body>
+		<div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+
+		<header class="mdl-layout__header">
+			<div class="mdl-layout__header-row">
+				<span class="mdl-layout-title"><a href="../../../index.html"><img src="../../../images/icon.ico" width="50" height="50"></a></span>
+				<div class="mdl-layout-spacer"></div>			
+			</div>
+		</header>
+
+		<div class="mdl-layout__drawer" style="margin-left:-38px;width:280px">
+			<span class="mdl-layout-title"><img src="../../../images/banner.png" width="240" height="65"></span>.
+			<nav class="mdl-navigation" style="margin-left=-20px">
+				<a class="mdl-navigation__link" href="../../../c.html">		<img src="../../../images/logo/c.png" width="35" height="35">   C LANGUAGE</a>
+				<a class="mdl-navigation__link" href="../../../c++.html">	<img src="../../../images/logo/c++.png" width="35" height="35">    C++ PROGRAMING</a>
+				<a class="mdl-navigation__link" href="../../../java.html">	<img src="../../../images/logo/java.png" width="35" height="35">  JAVA</a>
+				<a class="mdl-navigation__link" href="../../../oracle.html"><img src="../../../images/logo/oracle.png" width="30" height="30"> ORACLE</a>
+				<a class="mdl-navigation__link" href="../../../python.html"><img src="../../../images/logo/python.png" width="30" height="30"> PYTHON</a>
+				<a class="mdl-navigation__link" href="../../../webdev.html"><img src="../../../images/logo/webdev.png" width="35" height="35"> WEB DEVELOPMENT</a>
+				<a class="mdl-navigation__link" href="../../../oracle_ebs/docs/00.html"><img src="../../../images/logo/o_ebs.png" width="35" height="35"> ORACLE_EBS</a>
+			</nav>
+		</div>
+	<main>	
+		<table class="mdl-data-table mdl-js-data-table mdl-data-table--selectable mdl-shadow--2dp" style="position:absolute;margin-top:25px;margin-left:150px;width:955px;">
+  		<thead> </thead>
+  		<tbody>
+    		<tr> <td class="mdl-data-table__cell--non-numeric"><center><font size="5"><b>HTML5 Interview Questions</b></font></center></td></tr>
+		</tbody>
+		</table>
+		
+		<div class="page-content" style="position:static;margin-top:70px;margin-left:135px;margin-bottom:50px">
+		<div class="mdl-grid">
+		<div class="mdl-cell mdl-cell--10col" style="width:1500px;">
+		<div class="mdl-card mdl-shadow--2dp demo-card" style="height:auto">
+	<p>	
+	<pre>
+   	
+	<b><font color="red">21) What is local storage ?</font></b>
+	With HTML 5 local storage Web applications can store data locally within the user's browser. Earlier it was done by cookies, 
+	Local storage is more secure, and large amounts of data can be stored locally, without affecting website performance.
+	
+	<b><font color="red">22) Which method is used to get user's position?</font></b>
+	getCurrentPosition﴾﴿ method is used to get the user's position.
+
+	<b><font color="red">23) How Web Workers Work?</font></b>
+	Web Workers are initialized with the URL of a JavaScript file, which contains the code of the worker . This code sets event listeners 
+	and communicates with the script that invoke it from the main page.
+
+	basic syntax is: var worker = new Worker﴾'background‐prog.js'﴿;
+	
+	<b><font color="red">24) Describe Server Sent Event ?</font></b>
+	Server Sent Event allows our webpages to get automatically updated from the server.
+	
+	<b><font color="red">25) Describe Web-Socket?</font></b>
+	Web Sockets is used as bidirectional communication technology for web applications. It operates over a single socket via ajavascript 
+	interface
+
+	<b><font color="red">26)What is geolocation ?</font></b>
+	The HTML Geolocation API is used to locate the geographical position of a user. It needs user permission to ensure user privacy
+	
+	<b><font color="red">27)What is the use of geolocation ?</font></b>
+	To locate the exact user position
+	
+	<b><font color="red">28) What is single page application SPA ?</font></b>
+	A single‐page application ﴾SPA﴿, also known as single‐page interface ﴾SPI﴿, It is a web application or web site that fits on a single 
+	web page with the goal of providing a more fluid user experience skin to a desktop application
+	
+	<b><font color="red">29) How can we play video using HTML 5 ?</font></b>
+	We can play video with &lt;video&gt; element, HTML 5 has introduce new &lt;video&gt; element to play video files
+	
+	<b><font color="red">30) What do you mean by browser compatibility?</font></b>
+	Browser compatibility means our code should be compatible with different browsers, and different versions of individual browsers
+
+	<a href="02.html" style="text-decoration:none;">;<img src="../../../images/back.png"  width="75" height="40" style="positoin:absolute;margin-left:0px;"></a>
+	<a href="04.html" style="text-decoration:none;">;<img src="../../../images/next.png"  width="75" height="40" style="positoin:absolute;margin-left:770px;margin-top:-48px"></a>
+
+	</pre>					
+	</p>
+
+
+</main>
+
+		<footer class="mdl-mini-footer"  style="margin-top:140px;">
+			<div class="mdl-mini-footer--left-section" style="margin-top:-15px;">
+				<div class="mdl-logo"><b>Fallow us on</b></div>
+				<ul class="mdl-mini-footer--link-list" style="margin-top:-15px;margin-left:105px;">
+					<li><a href="https://facebook.com/c4c.ady" style="text-decoration:none;">	<img src="../../../images/social/facebook.png" 	width="35" height="35" 	 style="position:relative;bottom:-12px"></a></li>
+					<li><a href="https://twitter.com/c4c_ady" style="text-decoration:none;">   	<img src="../../../images/social/twitter.png" 	width="35" height="35"   style="position:relative;bottom:-12px"></a>  </li>
+					<li><a href="https://www.youtube.com/channel/UCDjj2kpaHyDbC9jpD1tEJ4Q" >	<img src="../../../images/social/youtube.png"  	width="35" height="35"   style="position:relative;bottom:-12px"></a></li>
+					<li><a href="https://instagram.com/c4c_ady" style="text-decoration:none;">	<img src="../../../images/social/instagram.png" 	width="35" height="35" 	 style="position:relative;bottom:-12px"></a></li>
+				</ul>
+			</div>
+		</footer>
+
+	
+</div>
+
+</body>
+</html>

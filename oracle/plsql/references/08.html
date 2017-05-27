@@ -1,0 +1,162 @@
+<html>
+<head>
+<title>PLSQL - REf Curosr</title>
+	<link rel="shortcut icon" href="../../../images/icon.ico" type="image/ico">
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+<link rel="stylesheet" href="https://code.getmdl.io/1.1.3/material.red-light_blue.min.css" />
+<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:300,400,500,700" type="text/css">
+<script defer src="../../../mdl/material.min.js"></script>
+<style>
+	.demo-card.mdl-card{width:950px;overflow:hidden;text-decoration:none;}
+	.demo-card > .mdl-card__title{color:#fff;height:auto;background:url('images/oracle.png') center/cover;text-decoration:none;}
+	.demo-card > .mdl-card__title a{color: inherit;text-decoration:none;}
+	.demo-card > .mdl-card__menu{color:#fff;text-decoration:none;}	
+	pre{font-family:inherit;font-size:15px}
+</style>
+
+</head>
+
+<body>
+		<div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+		<header class="mdl-layout__header">
+			<div class="mdl-layout__header-row">
+				<span class="mdl-layout-title"><a href="../../../index.html"><img src="../../../images/icon.ico" width="50" height="50"></a></span>
+				<div class="mdl-layout-spacer"></div>
+				
+				
+				</div>
+		</header>
+		<div class="mdl-layout__drawer" style="margin-left:-38px;width:280px">
+			<span class="mdl-layout-title"><img src="../../../images/banner.png" width="240" height="65"></span>
+			<nav class="mdl-navigation" style="margin-left=-20px">
+				<a class="mdl-navigation__link" href="../../../c.html"><img src="../../../images/logo/c.png" width="35" height="35">   C LANGUAGE</a>
+				<a class="mdl-navigation__link" href="../../../c++.html"><img src="../../../images/logo/c++.png" width="35" height="35">    C++ PROGRAMING</a>
+				<a class="mdl-navigation__link" href="../../../java.html"><img src="../../../images/logo/java.png" width="35" height="35">  JAVA</a>
+				<a class="mdl-navigation__link" href="../../../oracle.html"><img src="../../../images/logo/oracle.png" width="30" height="30"> ORACLE</a>
+				<a class="mdl-navigation__link" href="../../../python.html"><img src="../../../images/logo/python.png" width="30" height="30"> PYTHON</a>
+				<a class="mdl-navigation__link" href="../../../webdev.html"><img src="../../../images/logo/webdev.png" width="35" height="35"> WEB DEVELOPMENT</a>
+				<a class="mdl-navigation__link" href="../../../oracle_ebs/docs/00.html"><img src="../../../images/logo/o_ebs.png" width="35" height="35"> ORACLE_EBS</a>
+			</nav>
+		</div>
+	
+	<main >	
+		<table class="mdl-data-table mdl-js-data-table mdl-data-table--selectable mdl-shadow--2dp" style="margin-top:25px;margin-left:100px;margin-bottom:15px;widht:12px">
+  		<thead> </thead>
+  		<tbody >
+    		<tr> <td class="mdl-data-table__cell--non-numeric"><a href="01.html" style="text-decoration:none;color:inherit">	1. Blocks</a></td></tr>
+    		<tr> <td class="mdl-data-table__cell--non-numeric"><a href="02.html" style="text-decoration:none;color:inherit">	2. Basics</a></td></tr>
+    		<tr> <td class="mdl-data-table__cell--non-numeric"><a href="03.html" style="text-decoration:none;color:inherit">	3. Data Types</a></td></tr>
+		<tr> <td class="mdl-data-table__cell--non-numeric"><a href="04.html" style="text-decoration:none;color:inherit">	4. Control Statements</a></td></tr>
+    		<tr> <td class="mdl-data-table__cell--non-numeric"><a href="05.html" style="text-decoration:none;color:inherit">	5. Loops</a></td> </tr>
+    		<tr> <td class="mdl-data-table__cell--non-numeric"><a href="06.html" style="text-decoration:none;color:inherit">	6. Cursors</a></td> </tr>
+    		<tr> <td class="mdl-data-table__cell--non-numeric"><a href="07.html" style="text-decoration:none;color:inherit"> 7. SubTopics in Cursors</a></td> </tr>
+    		<tr> <td class="mdl-data-table__cell--non-numeric"><a href="08.html" style="text-decoration:none;color:inherit"><font size="3"><b>	8. RefCursor</b></font></a></td></tr>
+		<tr> <td class="mdl-data-table__cell--non-numeric"><a href="09.html" style="text-decoration:none;color:inherit">			9. PreDefined Exceptions</a></td></tr>
+    		<tr> <td class="mdl-data-table__cell--non-numeric"><a href="10.html" style="text-decoration:none;color:inherit">			10. UserDefined Exceptions</a></td></tr>
+    		<tr> <td class="mdl-data-table__cell--non-numeric"><a href="11.html" style="text-decoration:none;color:inherit">			11. NonPredefined Exceptions</a></td> </tr>
+		<tr> <td class="mdl-data-table__cell--non-numeric"><a href="12.html" style="text-decoration:none;color:inherit">			12. Procedures</a></td> </tr>
+    		<tr> <td class="mdl-data-table__cell--non-numeric"><a href="13.html" style="text-decoration:none;color:inherit">			13. Functions</a></td> </tr>
+    		<tr> <td class="mdl-data-table__cell--non-numeric"><a href="14.html" style="text-decoration:none;color:inherit">			14. Packages</a></td>	</tr>
+		<tr> <td class="mdl-data-table__cell--non-numeric"><a href="15.html" style="text-decoration:none;color:inherit">			15. Misc</a></td></tr>
+    		<tr> <td class="mdl-data-table__cell--non-numeric"><a href="16.html" style="text-decoration:none;color:inherit">			16. Triggers</a></td> </tr>
+    		<tr> <td class="mdl-data-table__cell--non-numeric"><a href="17.html" style="text-decoration:none;color:inherit">			17. Collections</a></td> </tr>
+  		<tr> <td class="mdl-data-table__cell--non-numeric"><a href="18.html" style="text-decoration:none;color:inherit">			18. Bulk</a></td> </tr>
+		<tr> <td class="mdl-data-table__cell--non-numeric"><a href="19.html" style="text-decoration:none;color:inherit">			19. Misc</a></td> </tr>
+  		<tr> <td class="mdl-data-table__cell--non-numeric"><a href="20.html" style="text-decoration:none;color:inherit">			20. Pragma Autonomous Transaction</a></td> </tr>
+  		</tbody>
+		</table>
+	
+		<table class="mdl-data-table mdl-js-data-table mdl-data-table--selectable mdl-shadow--2dp" style="position:absolute;margin-top:-977px;margin-left:374px;width:955px;">
+  		<thead> </thead>
+  		<tbody>
+    		<tr> <td class="mdl-data-table__cell--non-numeric"><center><font size="5"><b>8. Ref Cursor/ Dyanmic Cursor</b></font></center></td></tr>
+		</tbody>
+		</table>
+		
+		<div class="page-content" style="position:absolute;margin-top:-930px;margin-left:360px;">
+				<div class="mdl-grid">
+					<div class="mdl-cell mdl-cell--10col" style="width:1500px;">
+					<div class="mdl-card mdl-shadow--2dp demo-card" style="height:auto">
+	<p><pre>
+	<b>REF CURSOR/ DYNAMIC CUROSR</b>
+		•Ref cursors are user define types, which is used to process multiple records and also record by record process
+		•Generally through the static cursors we are using one select statement at a time for single active set area, where as in ref cursor we are executing no.of select statements dynamically for single active set area
+		•By using ref cursor we can return large amount of data from oracle database into client application
+		•There are two type of ref cursors
+			oStrong ref cursor
+			oWeak ref cursor
+		Strong ref cursor
+			oIt is one of the ref cursor which is having return type
+		Weak ref cursor
+			oIt is one of the ref cursor which does not have a return type
+		Note: in ref cursor we are executing select statements using open…. For statement
+ 
+		Ex-1
+			Declare
+				Type t1 is ref cursor;
+				X 		t1;
+  				Vrow 		emp%rowtype;
+			
+			Begin
+				Open x for select * from emp where sal>2000;
+				Loop
+				Fetch x into vrow;
+				Exit when x%notfound;
+				Dbms_output.put_line (vrow.ename);
+				End loop;
+			End;
+				
+		Ex-2:
+			Declare
+				Type t1 is ref curosor;
+				V_rc 		t1;
+				V_x 		emp%rowtype;
+				V_y		dept%rowtype;
+				P_no 		number:= &pno
+			Begin
+				If p_no=1 then
+				Open v_rc for select * from emp;
+				Loop
+				Fetch v_rc into x;
+				Exit when v_rc%notfound;
+				Dbms_output.put_line (x.ename);
+				End loop;
+				Elsif p_no=2 then
+				Open v_rc for select * from dept;
+				Loop
+				Fetch v_rc into y;
+				Exit when v_rc%notfound;
+				Dbms_output.put_line (y.dname);
+				End loop;
+				End if;
+			End;
+			
+		
+
+	
+	</pre></p>		
+					</div>	
+					</div>				
+				</div>
+				</div>
+		</main>
+	
+
+		<footer class="mdl-mini-footer"  style="margin-top:380px;">
+			<div class="mdl-mini-footer--left-section" style="margin-top:-15px;">
+				<div class="mdl-logo"><b>Fallow us on</b></div>
+				<ul class="mdl-mini-footer--link-list" style="margin-top:-15px;margin-left:105px;">
+					<li><a href="https://facebook.com/c4c.ady" style="text-decoration:none;">	<img src="../../../images/facebook.png" 	width="35" height="35" onmouseover="this.src='../../../images/social/facebook.png'" onmouseout="this.src='../../../images/facebook.png'" style="position:relative;bottom:-12px"></a></li>
+					<li><a href="https://twitter.com/c4c_ady" style="text-decoration:none;">   	<img src="../../../images/twitter.png" 	width="35" height="35" onmouseover="this.src='../../../images/social/twitter.png'" onmouseout="this.src='../../../images/twitter.png'" style="position:relative;bottom:-12px"></a>  </li>
+					<li><a href="https://www.youtube.com/channel/UCDjj2kpaHyDbC9jpD1tEJ4Q" >	<img src="../../../images/youtube.png"  	width="35" height="35" onmouseover="this.src='../../../images/social/youtube.png'" onmouseout="this.src='../../../images/youtube.png'" style="position:relative;bottom:-12px"></a></li>
+					<li><a href="https://instagram.com/c4c_ady" style="text-decoration:none;">	<img src="../../../images/instagram.png" width="35" height="35" onmouseover="this.src='../../../images/social/instagram.png'" onmouseout="this.src='../../../images/instagram.png'" style="position:relative;bottom:-12px"></a></li>
+				</ul>
+			</div>
+		</footer>
+
+
+	</div>
+
+
+</body>
+</html>

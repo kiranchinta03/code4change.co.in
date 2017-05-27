@@ -1,0 +1,294 @@
+<html>
+<head>
+<title>PLSQL - Predefinded Exceptions</title>
+	<link rel="shortcut icon" href="../../../images/icon.ico" type="image/ico">
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+<link rel="stylesheet" href="https://code.getmdl.io/1.1.3/material.red-light_blue.min.css" />
+<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:300,400,500,700" type="text/css">
+<script defer src="../../../mdl/material.min.js"></script>
+<style>
+	.demo-card.mdl-card{width:950px;overflow:hidden;text-decoration:none;}
+	.demo-card > .mdl-card__title{color:#fff;height:auto;background:url('images/oracle.png') center/cover;text-decoration:none;}
+	.demo-card > .mdl-card__title a{color: inherit;text-decoration:none;}
+	.demo-card > .mdl-card__menu{color:#fff;text-decoration:none;}	
+	pre{font-family:inherit;font-size:15px}
+</style>
+
+</head>
+
+<body>
+		<div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+		<header class="mdl-layout__header">
+			<div class="mdl-layout__header-row">
+				<span class="mdl-layout-title"><a href="../../../index.html"><img src="../../../images/icon.ico" width="50" height="50"></a></span>
+				<div class="mdl-layout-spacer"></div>
+				
+				
+				</div>
+		</header>
+		<div class="mdl-layout__drawer" style="margin-left:-38px;width:280px">
+			<span class="mdl-layout-title"><img src="../../../images/banner.png" width="240" height="65"></span>
+			<nav class="mdl-navigation" style="margin-left=-20px">
+				<a class="mdl-navigation__link" href="../../../c.html"><img src="../../../images/logo/c.png" width="35" height="35">   C LANGUAGE</a>
+				<a class="mdl-navigation__link" href="../../../c++.html"><img src="../../../images/logo/c++.png" width="35" height="35">    C++ PROGRAMING</a>
+				<a class="mdl-navigation__link" href="../../../java.html"><img src="../../../images/logo/java.png" width="35" height="35">  JAVA</a>
+				<a class="mdl-navigation__link" href="../../../oracle.html"><img src="../../../images/logo/oracle.png" width="30" height="30"> ORACLE</a>
+				<a class="mdl-navigation__link" href="../../../python.html"><img src="../../../images/logo/python.png" width="30" height="30"> PYTHON</a>
+				<a class="mdl-navigation__link" href="../../../webdev.html"><img src="../../../images/logo/webdev.png" width="35" height="35"> WEB DEVELOPMENT</a>
+				<a class="mdl-navigation__link" href="../../../oracle_ebs/docs/00.html"><img src="../../../images/logo/o_ebs.png" width="35" height="35"> ORACLE_EBS</a>
+			</nav>
+		</div>
+	
+	<main >	
+		<table class="mdl-data-table mdl-js-data-table mdl-data-table--selectable mdl-shadow--2dp" style="margin-top:25px;margin-left:100px;margin-bottom:15px;widht:12px">
+  		<thead> </thead>
+  		<tbody >
+    		<tr> <td class="mdl-data-table__cell--non-numeric"><a href="01.html" style="text-decoration:none;color:inherit">	1. Blocks</a></td></tr>
+    		<tr> <td class="mdl-data-table__cell--non-numeric"><a href="02.html" style="text-decoration:none;color:inherit">	2. Basics</a></td></tr>
+    		<tr> <td class="mdl-data-table__cell--non-numeric"><a href="03.html" style="text-decoration:none;color:inherit">	3. Data Types</a></td></tr>
+		<tr> <td class="mdl-data-table__cell--non-numeric"><a href="04.html" style="text-decoration:none;color:inherit">	4. Control Statements</a></td></tr>
+    		<tr> <td class="mdl-data-table__cell--non-numeric"><a href="05.html" style="text-decoration:none;color:inherit">	5. Loops</a></td> </tr>
+    		<tr> <td class="mdl-data-table__cell--non-numeric"><a href="06.html" style="text-decoration:none;color:inherit">	6. Cursors</a></td> </tr>
+    		<tr> <td class="mdl-data-table__cell--non-numeric"><a href="07.html" style="text-decoration:none;color:inherit"> 7. SubTopics in Cursors</a></td> </tr>
+    		<tr> <td class="mdl-data-table__cell--non-numeric"><a href="08.html" style="text-decoration:none;color:inherit">	8. RefCursor</a></td></tr>
+		<tr> <td class="mdl-data-table__cell--non-numeric"><a href="09.html" style="text-decoration:none;color:inherit"><font size="3"><b>	9. PreDefined Exceptions</b></font></a></td></tr>
+    		<tr> <td class="mdl-data-table__cell--non-numeric"><a href="10.html" style="text-decoration:none;color:inherit">			10. UserDefined Exceptions</a></td></tr>
+    		<tr> <td class="mdl-data-table__cell--non-numeric"><a href="11.html" style="text-decoration:none;color:inherit">			11. NonPredefined Exceptions</a></td> </tr>
+		<tr> <td class="mdl-data-table__cell--non-numeric"><a href="12.html" style="text-decoration:none;color:inherit">			12. Procedures</a></td> </tr>
+    		<tr> <td class="mdl-data-table__cell--non-numeric"><a href="13.html" style="text-decoration:none;color:inherit">			13. Functions</a></td> </tr>
+    		<tr> <td class="mdl-data-table__cell--non-numeric"><a href="14.html" style="text-decoration:none;color:inherit">			14. Packages</a></td>	</tr>
+		<tr> <td class="mdl-data-table__cell--non-numeric"><a href="15.html" style="text-decoration:none;color:inherit">			15. Misc</a></td></tr>
+    		<tr> <td class="mdl-data-table__cell--non-numeric"><a href="16.html" style="text-decoration:none;color:inherit">			16. Triggers</a></td> </tr>
+    		<tr> <td class="mdl-data-table__cell--non-numeric"><a href="17.html" style="text-decoration:none;color:inherit">			17. Collections</a></td> </tr>
+  		<tr> <td class="mdl-data-table__cell--non-numeric"><a href="18.html" style="text-decoration:none;color:inherit">			18. Bulk</a></td> </tr>
+		<tr> <td class="mdl-data-table__cell--non-numeric"><a href="19.html" style="text-decoration:none;color:inherit">			19. Misc</a></td> </tr>
+  		<tr> <td class="mdl-data-table__cell--non-numeric"><a href="20.html" style="text-decoration:none;color:inherit">			20. Pragma Autonomous Transaction</a></td> </tr>
+  		</tbody>
+		</table>
+	
+		<table class="mdl-data-table mdl-js-data-table mdl-data-table--selectable mdl-shadow--2dp" style="position:absolute;margin-top:-977px;margin-left:374px;width:955px;">
+  		<thead> </thead>
+  		<tbody>
+    		<tr> <td class="mdl-data-table__cell--non-numeric"><center><font size="5"><b>9. Exceptions:Predefined Exceptions</b></font></center></td></tr>
+		</tbody>
+		</table>
+		
+		<div class="page-content" style="position:absolute;margin-top:-930px;margin-left:360px;">
+				<div class="mdl-grid">
+					<div class="mdl-cell mdl-cell--10col" style="width:1500px;">
+					<div class="mdl-card mdl-shadow--2dp demo-card" style="height:auto">
+	<p><pre>
+	<b>Exception</b>
+		•Exceptions are the activities which are used to handle errors at run time
+		•There are 3 types of exceptions
+			i.Pre-defined exceptions
+			ii.User defined exceptions
+			iii.Non predefined exceptions
+
+	<b>1.PRE DEFINED EXCEPTIONS</b>
+		i.It is one of the exception which are defined by oracle
+		ii.These are 20 exceptions available
+		Synt: when exceptin1 then 
+			Statements;
+			When exception2 then	
+			Statements;
+			When others then
+			Statements;
+		iii.	Predefined exceptions are 
+			1.No_data_found
+			2.Too_many_rows
+			3.Invalid_cursor
+			4.Cursor_already_open
+			5.Invalid_number
+			6.Value_error
+			7.Zero_divide
+			8.Others-++
+
+	<b>1)No data found:</b>
+			a.When a pl/sql block contains select-----into clause and also if requested data not available in table oracle server returns an error.
+			b.Error is ora.01403:no data found
+			c.To handle this  error we are using no_data_found exception
+
+	Ex-1:	declare
+			V_ename 	varchar (20);
+			V_sal 		number (10);
+		Begin
+			Select ename, sal into v_ename, v_sal from emp where 
+			Empno = :no;
+			Dbms_output.put_line (v_ename||’,’||v_sal);
+		End;
+
+	Ex-2:	declare
+			V_ename 	varchar (20);
+			V_sal 		number (10);
+		Begin
+			Select ename, sal into v_ename, v_sal from emp where 
+			Empno = :no;
+			Dbms_output.put_line (v_ename||’,’||v_sal);
+		Exceptions
+			When no_data_found then
+			Dbms_output.put_line (‘employees doesn’t exist’);
+		End;
+
+	<b>2)Too_many_rows</b>
+		1.When a select ----into clause try to return more than one record or more than one values then oracle server will return an error
+		2.Error is ora.01422: exact fetch return more than requested number of rows
+		3.To handle these errors we use too_many_rows exception
+
+	Ex-1:	declare
+			V_ename 	varchar (20);
+			V_sal 		number (10);
+		Begin
+			Select ename, sal into v_ename, v_sal from emp where 
+			Empno = :no;
+			Dbms_output.put_line (v_ename||’,’||v_sal);
+		End;
+
+	Ex-2:	declare
+			V_ename 	varchar (20);
+			V_sal 		number (10);
+		Begin
+			Select ename, sal into v_ename, v_sal from emp where 
+			Empno = :no;
+			Dbms_output.put_line (v_ename||’,’||v_sal);
+		Exceptions
+			When too_many_rows then
+			Dbms_output.put_line (‘program returns more than one row’);
+		End;
+
+	Ex-3	declare 
+			Vrow emp%rowtype
+		Begin
+			Select * into vrow from emp where deptno=:dno
+			Dbms_output.put_line (vrow.ename);
+		Exception
+			When no_data_found
+			Dbms_output.put_line (‘emps doesn’t exist in this dept’)
+			When too_many_rows then
+			Dbms_output.put_line (‘program returns more than one row’);
+		End;
+			i/p: 40 then o/p: emps doesn’t exist in this dept
+			i/p: 10 then o/p: program returns more than one row
+
+	<b>3) Invalid cursor:</b>
+		1.Whenever we are performing invalid operations on the cursor, server will return an error i.e., if you are try to close the cursor with opening it.
+		2.Error is ora. 01001 : invalid cursor
+		3.To handle this error we use invalid_cursor exception
+
+	<b>4)Cursor already open::</b>
+		1.When we try to reopen the cursor without closing the cursor oracle server returns an error
+		2.Error is ora.06511: cursor is already open
+		3.To handle this error we use cursor_already_open.
+
+	<b>5) Invalid number::</b>
+		1.Whenever we try to convert string type to number type server return error.
+		2.Error is ora.01722 invalid number.
+		3.To handle this error we are using invalid_number exception
+		Ex-1:	begin
+				Insert into emp (empno,ename) values (‘abcd’,’abcd’);
+			Exception
+				When invalid_number then
+				Dbms_output.put_line (‘plz check the datatype’)
+			End;
+	<b>6) Value_error::</b>
+		1.Whenever we are try to convert string type to number type based on the condition then oracle server returns an error.
+		2.Whenever we are try to store large amount of data, than the specified datatype size then oracle server returns same error.
+		3.Error is ora.06502: numeric or value error :character to number conversion error
+		4.To handle this error we use value_error
+
+		Ex-1: (pt-1)
+	
+		Declare
+			A	number(5);
+			Begin
+			A:=’:x’+’:y’;
+			Dbms_output.put_line (a);
+		Exception
+			When value_error then
+			Dbms_output.put_line (‘plz enter values only’);
+		End;
+		If u give any char to either x or y we get this error
+
+		Ex-2: (pt-2)
+	
+		Declare
+			A	number(2);
+		Begin
+			A:=’:x’+’:y’;
+			Dbms_output.put_line (a);
+		Exception
+			When value_error then
+			Dbms_output.put_line (‘give no.of addition < 1’);
+		End;
+
+	<b>7) Zero_error</b>
+		1.Whenever we try to divide  by zero then oracle server returns an error
+		2.Error is ora-01476: divisor is equal to zero
+		3.To handle this error we are using zero_divide exception
+	Ex-1:	declare
+		A 	number (5):=:a;
+		B	number (5):=:b;
+		C 	number (5):=:c;
+	Begin
+		A:=b/c;
+		Dbms_output.put_line (a);
+	Exception
+		When Zero_divide then
+		Dbms_output.put_line (‘enter c value >1’);
+	End;
+
+				
+
+       <b>=> EXCEPTION PROPOGATION</b>
+		Exceptions are also raised in 
+			Declaration section
+			Executable section
+			Exception section
+
+		If the exceptions are raised in executable section then those exceptions are handled using either  an outer block
+		Whereas if exception are raised in declaration section or in exception section those exceptions are handled using outer blocks only
+
+		Ex-1:	begin
+			Declare
+				 A 	number (3): =’abcde’;
+				Begin
+					A:= ‘abcd’;
+					Dbms_output.put_line (a);
+				Exception
+					When value_error then
+					Dbms_output.put_line (‘a    value is more than 3 char’);
+				End;
+				exception
+					When value_error then
+					Dbms_output.put_line (‘plz check the size in variable’);
+				End;
+
+	
+
+	
+	</pre></p>		
+					</div>	
+					</div>				
+				</div>
+				</div>
+		</main>
+	
+
+		<footer class="mdl-mini-footer" style="margin-top:3000px;" >
+			<div class="mdl-mini-footer--left-section" style="margin-top:-15px;">
+				<div class="mdl-logo"><b>Fallow us on</b></div>
+				<ul class="mdl-mini-footer--link-list" style="margin-top:-15px;margin-left:105px;">
+					<li><a href="https://facebook.com/c4c.ady" style="text-decoration:none;">	<img src="../../../images/facebook.png" 	width="35" height="35" onmouseover="this.src='../../../images/social/facebook.png'" onmouseout="this.src='../../../images/facebook.png'" style="position:relative;bottom:-12px"></a></li>
+					<li><a href="https://twitter.com/c4c_ady" style="text-decoration:none;">   	<img src="../../../images/twitter.png" 	width="35" height="35" onmouseover="this.src='../../../images/social/twitter.png'" onmouseout="this.src='../../../images/twitter.png'" style="position:relative;bottom:-12px"></a>  </li>
+					<li><a href="https://www.youtube.com/channel/UCDjj2kpaHyDbC9jpD1tEJ4Q" >	<img src="../../../images/youtube.png"  	width="35" height="35" onmouseover="this.src='../../../images/social/youtube.png'" onmouseout="this.src='../../../images/youtube.png'" style="position:relative;bottom:-12px"></a></li>
+					<li><a href="https://instagram.com/c4c_ady" style="text-decoration:none;">	<img src="../../../images/instagram.png" width="35" height="35" onmouseover="this.src='../../../images/social/instagram.png'" onmouseout="this.src='../../../images/instagram.png'" style="position:relative;bottom:-12px"></a></li>
+				</ul>
+			</div>
+		</footer>
+
+
+	</div>
+
+
+</body>
+</html>

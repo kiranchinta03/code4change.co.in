@@ -1,0 +1,196 @@
+<html>
+<head>
+<title>BS - Questions</title>
+<script type="text/javascript" src="../../../js/jquery-3.1.0.min.js"></script>
+<script type="text/javascript">
+$(document).ready(function(e){
+	$('div main nav ul li').click(function(){
+		$(this).toggleClass('tap');
+	});
+});
+
+</script>
+<link rel="shortcut icon" href="../../../images/icon.ico" type="image/ico">
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+<link rel="stylesheet" href="https://code.getmdl.io/1.2.1/material.deep_purple-deep_orange.min.css" />
+<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:300,400,500,700" type="text/css">
+<script defer src="../../../mdl/material.min.js"></script>
+<style>
+	.demo-card.mdl-card{width:950px;overflow:hidden;text-decoration:none;}
+	.demo-card > .mdl-card__title{color:#fff;height:auto;background:url('images/oracle.png') center/cover;text-decoration:none;}
+	.demo-card > .mdl-card__title a{color: inherit;text-decoration:none;}
+	.demo-card > .mdl-card__menu{color:#fff;text-decoration:none;}	
+	pre{font-family:inherit;font-size:15px}
+	p{margin:0px;padding:0px;}
+	.mdl-layout mdl-js-layout mdl-layout--fixed-header mdl-mini-footer{margin-bottom:0px;clear:both;}
+	footer img:hover{transform:scale(1.2)}
+
+</style>
+<style>.arrow{float:left}</style>
+<style>
+*{padding:0;margin:0;}	
+a{text-decoration:none;}
+	li{list-style:none;}
+	div main nav{width:300px;background:white;box-shadow: 0px 0px 3px;}
+	div main nav ul ul {background:#fee084}
+	div main nav ul ul a:before{content:'\203A';margin-right:20px;}
+	div main nav a{display:block; padding: 10px 0 10px 20px;color:black;border-bottom:1.5px solid black}
+	div main nav a:hover{background:#03A9F4;}
+	div main nav ul ul{display:none}
+	div main nav ul li:hover ul{display:block}
+	div main nav ul span:after{content:'\203A';float:right;margin-right:20px;-webkit-transform:rotate(90deg);-moz-transform:rotate(90deg)}
+</style>
+<style>
+pre.prettyprint.tryit {min-height:37px;margin-left:10px;margin-right:10px;font-family:calibri; background: #eee url(/html/images/try-it.jpg) top right no-repeat !important}div.feature-box div.feature-box-icon, .col-md-3 .course-box, li.heading, div.footer-copyright { background: #88c53a url(/images/pattern.png) repeat center center !important;}
+.sub-main-menu .sub-menuu div:hover, .sub-main-menu .viewall, header nav ul.nav-main li a:hover, button.btn-responsive-nav, header div.search button.btn-default { background: #88c53a !important;}
+.submenu-item{ border-bottom: 2px solid #88c53a !important; border-top: 2px solid #88c53a !important; }
+</style>
+</head>
+
+<body>
+		<div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+
+		<header class="mdl-layout__header">
+			<div class="mdl-layout__header-row">
+				<span class="mdl-layout-title"><a href="../../../index.html"><img src="../../../images/icon.ico" width="50" height="50"></a></span>
+				<div class="mdl-layout-spacer"></div>			
+			</div>
+		</header>
+
+		<div class="mdl-layout__drawer" style="margin-left:-38px;width:280px">
+			<span class="mdl-layout-title"><img src="../../../images/banner.png" width="240" height="65"></span>.
+			<nav class="mdl-navigation" style="margin-left=-20px">
+				<a class="mdl-navigation__link" href="../../../c.html">		<img src="../../../images/logo/c.png" width="35" height="35">   C LANGUAGE</a>
+				<a class="mdl-navigation__link" href="../../../c++.html">	<img src="../../../images/logo/c++.png" width="35" height="35">    C++ PROGRAMING</a>
+				<a class="mdl-navigation__link" href="../../../java.html">	<img src="../../../images/logo/java.png" width="35" height="35">  JAVA</a>
+				<a class="mdl-navigation__link" href="../../../oracle.html"><img src="../../../images/logo/oracle.png" width="30" height="30"> ORACLE</a>
+				<a class="mdl-navigation__link" href="../../../python.html"><img src="../../../images/logo/python.png" width="30" height="30"> PYTHON</a>
+				<a class="mdl-navigation__link" href="../../../webdev.html"><img src="../../../images/logo/webdev.png" width="35" height="35"> WEB DEVELOPMENT</a>
+				<a class="mdl-navigation__link" href="../../../oracle_ebs/docs/00.html"><img src="../../../images/logo/o_ebs.png" width="35" height="35"> ORACLE_EBS</a>
+			</nav>
+		</div>
+	<main>	
+		<table class="mdl-data-table mdl-js-data-table mdl-data-table--selectable mdl-shadow--2dp" style="position:absolute;margin-top:25px;margin-left:150px;width:955px;">
+  		<thead> </thead>
+  		<tbody>
+    		<tr> <td class="mdl-data-table__cell--non-numeric"><center><font size="5"><b>BootStrap Interview Questions</b></font></center></td></tr>
+		</tbody>
+		</table>
+		
+		<div class="page-content" style="position:static;margin-top:70px;margin-left:135px;margin-bottom:50px">
+		<div class="mdl-grid">
+		<div class="mdl-cell mdl-cell--10col" style="width:1500px;">
+		<div class="mdl-card mdl-shadow--2dp demo-card" style="height:auto">
+	<p>	
+	<pre>
+   	
+	
+	<b><font color="red">1) Explain what is Bootstrap?</font></b>
+
+	Bootstrap is Javascript framework for building the rich web applications with minimal effort. This framework emphasis more on 
+	building mobile web applications.
+
+	<b><font color="red">2) Explain why to choose Bootstrap for building the websites?</font></b>
+	
+	There are few reason why we choose Bootstrap for building websites
+
+	Mobile Support: For mobile devices it provides full support in one single file rather than in separate file. It supports the 
+	responsive design including adjusting the CSS based on the different types of device, size of the screen etc. It reduces extra 
+	effort for developers.
+	Easy to learn: Writing application in bootstrap is easy if you know CSS and HTML
+	Browser Support: It supports all the popular browsers like Firefox, Opera, Safari, IE etc.
+
+	<b><font color="red">3) What are the key components of Bootstrap?</font></b>
+	
+	The key components of Bootstrap are
+
+	CSS : It comes with plenty of CSS files
+	Scaffolding : It provides a basic structure with Grid system , link styles and background
+	Layout Components : List of layout components
+	JavaScript Plugins: It contains many jQuery and JavaScript plugins
+	Customize: To get your own version of framework you can customize your components
+
+	<b><font color="red">4) Explain what are class loaders in Bootstrap?</font></b>
+	
+	Class loader is a part of JRE (Java Runtime Environment) which loads Java classes into Java virtual environment. Class loaders also
+	does the process of converting a named class into its equivalent binary form.
+
+	<b><font color="red">5) What are the types of layout available in Bootstrap?</font></b>
+
+	In Bootstrap there are two types of Layout available
+
+	Fluid Layout: Fluid layout is used when you want to create a app that is 100% wide and use up all the width of the screen
+	Fixed Layout: For a standard screen you will use fixed layout (940 px) option
+	BootStrap
+
+	<b><font color="red">6) Explain what is Bootstrap Grid System?</font></b>
+
+	For creating page layout through a series of rows and columns that house your content Bootstrap Grid Sytem is used.
+
+	<b><font color="red">7) What are offset columns in Bootstrap?</font></b>
+
+	For more specialized layouts offsets are a useful feature. For more spacing they can be used by pushing column over.
+
+	For example, .col-xs=* classes do not support offset but they are easily replicated using an empty cell
+
+	<b><font color="red">8) What is column ordering in Bootstrap?</font></b>
+
+	Column ordering is one of the feature available in bootstrap and you can easily write columns in an order and show them in another one.
+	With .col-md-push-* and .col-md-pull-*
+
+	the order of the column can be easily changed.
+
+	<b><font color="red">9) What function you can use to wrap a page content?</font></b>
+
+	To wrap a page content you can use .container and using that you can also center the content.
+
+	<b><font color="red">10)Explain what pagination in bootstrap is and how they are classified?</font></b>
+
+	Pagination is the handling of an unordered list by bootstrap. To handle pagination bootstrap provides following classes
+	
+	.pagination: To get pagination on your page you have to add this class
+	.disabled, .active: Customize links by .disabled for unclickable links and .active to indicate the current page
+	.pagination-Ig, .pagination-sm: Use these classes to get different size item
+	
+	<b><font color="red">11) What is the use of Jumbotron in Bootstrap?</font></b>
+	
+	In bootstrap, Jumbotron is generally used for content that you want to highlight like some slogan or marketing headline etc. in other 
+	words it is used to enlarge the size of the headings and to add a margin for landing page content
+	
+	To use the Jumbotron in Bootstrap
+	
+	Create a container &lt;div&gt; with the class of .jumbotron
+	
+	<b><font color="red">12) What is the difference between Bootstrap and Foundation?</font></b>
+
+	Bootstrap Foundation
+	– Bootstrap offers unlimited number of UI elements – In Foundation UI element options are very limited in numbers
+	– Bootstraps uses pixels – Foundation use REMs
+	– Bootstrap encourages to design for both desktop and mobile. – Foundation encourages to design mobile first
+	– Bootstrap support LESS as its preprocessor – Foundation support Sass and Compass as its preprocessor
+		
+	<a href="02.html" style="text-decoration:none;">;<img src="../../../images/next.png"  width="75" height="40" style="positoin:absolute;margin-left:770px;margin-top:-48px"></a>
+
+	</pre>					
+	</p>
+
+
+</main>
+
+		<footer class="mdl-mini-footer"  style="margin-top:140px;">
+			<div class="mdl-mini-footer--left-section" style="margin-top:-15px;">
+				<div class="mdl-logo"><b>Fallow us on</b></div>
+				<ul class="mdl-mini-footer--link-list" style="margin-top:-15px;margin-left:105px;">
+					<li><a href="https://facebook.com/c4c.ady" style="text-decoration:none;">	<img src="../../../images/social/facebook.png" 	width="35" height="35" 	 style="position:relative;bottom:-12px"></a></li>
+					<li><a href="https://twitter.com/c4c_ady" style="text-decoration:none;">   	<img src="../../../images/social/twitter.png" 	width="35" height="35"   style="position:relative;bottom:-12px"></a>  </li>
+					<li><a href="https://www.youtube.com/channel/UCDjj2kpaHyDbC9jpD1tEJ4Q" >	<img src="../../../images/social/youtube.png"  	width="35" height="35"   style="position:relative;bottom:-12px"></a></li>
+					<li><a href="https://instagram.com/c4c_ady" style="text-decoration:none;">	<img src="../../../images/social/instagram.png" 	width="35" height="35" 	 style="position:relative;bottom:-12px"></a></li>
+				</ul>
+			</div>
+		</footer>
+
+	
+</div>
+
+</body>
+</html>

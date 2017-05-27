@@ -1,0 +1,685 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!-- saved from url=(0035)http://www.sqlcourse.com/table.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><script type="text/javascript" src="./table_files/get"></script><script type="text/javascript" src="./table_files/optout_check"></script><script async="" src="./table_files/controltag.js.726d287890a4d2c520d4a7a450e210ea"></script>
+
+	<meta name="WT.qs_dlk" content="V547SQrIZ7kAAFUj8UwAAAAA">
+
+	<meta name="WT.qs_shmv" content="hv20150423-statler.sf.quinstreet.net">
+
+	<meta name="inject_params" content="WT.qs_dlk=V547SQrIZ7kAAFUj8UwAAAAA&amp;">
+
+	<meta http-equiv="Set-Cookie" content="inject_params=WT.qs_dlk=V547SQrIZ7kAAFUj8UwAAAAA&amp;; path=/;  domain=sqlcourse.com;">
+	<meta http-equiv="Set-Cookie" content="WMUUID=V547SQrIZ7kAAFUj8UwAAAAA; path=/;  domain=sqlcourse.com;">
+
+        <title>SQLCourse - Lesson 2: Table Basics</title>
+	
+        <meta name="description" content="Lesson 2: table basics. From SQLCourse.com: an interactive online training course for SQL beginners.">
+        <meta name="keywords" content="database professional table sql dba interactive online beginners training">
+				<meta name="articleKey" content="3418710">
+			
+				<meta name="qs.quad.keywords" content="{keywords:&quot;96480,97360|935613,95910|95850&quot;,nodes:&quot;97360,96480&quot;}">
+		<script async="" src="./table_files/webtrends.min.js"></script><script async="" src="./table_files/analytics.js"></script><script type="text/javascript" async="" src="./table_files/controltag"></script><script type="text/javascript" async="" src="./table_files/tag.aspx"></script><script async="" src="./table_files/beacon.js"></script><script language="javascript" src="http://e1.cdn.qnsr.com/cgi/b/96480,97360/935613,95910/95850/tx.js"></script>
+		        
+                <meta name="ROBOTS" content="NOARCHIVE">
+                <meta name="date" content="2000-08-20">
+        <meta name="channel" content="Web Developer">
+        <meta name="section" content="sql">
+        <meta name="author" content="SQLCourse">
+		            <link rel="alternate" media="only screen and (max-width: 640px)" href="http://mobile.sqlcourse.com/table.html">
+                <link rel="stylesheet" type="text/css" href="./table_files/style.css">
+        <!-- Begin comScore Tag -->
+<script>
+  var _comscore = _comscore || [];
+  _comscore.push({ c1: "2", c2: "17199065" });
+  (function() {
+    var s = document.createElement("script"), el = document.getElementsByTagName("script")[0]; s.async = true;
+    s.src = (document.location.protocol == "https:" ? "https://sb" : "http://b") + ".scorecardresearch.com/beacon.js";
+    el.parentNode.insertBefore(s, el);
+  })();
+</script>
+<noscript>
+  &lt;img src="http://b.scorecardresearch.com/p?c1=2&amp;c2=17199065&amp;cv=2.0&amp;cj=1" alt=""/&gt;
+</noscript>
+<!-- End comScore Tag -->
+        <script type="text/javascript" src="./table_files/oas_sda.js"></script>
+		<script type="text/javascript" src="./table_files/dfp-common-min.js"></script>
+
+	<script type="text/javascript" src="./table_files/dfp-sync-min.js"></script><script src="./table_files/gpt.js"></script><script id="gpt-impl-0.1676967151958162" src="http://partner.googleadservices.com/gpt/pubads_impl_92.js"></script>
+
+<!-- BEGIN ML/CCM Tag -->
+<script type="text/javascript">var mlCLID="50450";</script>
+<script type="text/javascript" src="./table_files/dfp-ml_ccm2-min.js"></script>
+<!-- END ML/CCM Tag -->
+
+	<!-- BEGIN Krux Tag -->
+	<script type="text/javascript" src="./table_files/dfp-krux-min.js"></script>
+	<script class="kxct" data-id="Jd_NDrGw" data-timing="async" data-version="1.9" type="text/javascript">
+		window.Krux||((Krux=function(){Krux.q.push(arguments)}).q=[]);
+		(function(){
+			var k=document.createElement('script');k.type='text/javascript';k.async=true;
+			var m,src=(m=location.href.match(/\bkxsrc=([^&]+)/))&&decodeURIComponent(m[1]);
+			k.src = /^https?:\/\/([a-z0-9_\-\.]+\.)?krxd\.net(:\d{1,5})?\//i.test(src) ? src : src === "disable" ? "" : (location.protocol==="https:"?"https:":"http:")+"//cdn.krxd.net/controltag?confid=Jd_NDrGw";
+			var s=document.getElementsByTagName('script')[0];s.parentNode.insertBefore(k,s);
+		}());
+	</script>
+	<!-- END Krux Tag -->
+
+<meta name="DCSext.tax" content="audience,product development programming languages,product servers database"><meta name="DCSext.qse_b2b_tax" content="audience,product development programming languages,product servers database">
+	<script type="text/javascript">
+		eval(function(p,a,c,k,e,d){e=function(c){return c};if(!''.replace(/^/,String)){while(c--){d[c]=k[c]||c}k=[function(e){return d[e]}];e=function(){return'\\w+'};c=1};while(c--){if(k[c]){p=p.replace(new RegExp('\\b'+e(c)+'\\b','g'),k[c])}}return p}('0 2=1(\'2\');0 3=1(\'3\');0 6=1(\'6\');0 4=1(\'4\');0 5=1(\'5\');',7,7,'var|gDFPC|dn|jf|ir|noer|dr'.split('|'),0,{}));
+
+				googletag.defineSlot('/5055/b2b/it/sqlcourse/ciu',[[600,200],[300,200]],'ciu-1').addService(googletag.pubads()).setTargeting('pos','top');
+				if(mbw>1049){googletag.defineOutOfPageSlot('/5055/b2b/it/sqlcourse/hero','hero-1').addService(googletag.pubads());}
+				googletag.defineSlot('/5055/b2b/it/sqlcourse/imu',[[300,250],[300,600],[300,1050]],'imu-1').addService(googletag.pubads()).setTargeting('pos','top');
+				googletag.defineSlot('/5055/b2b/it/sqlcourse/imu',[[300,250],[300,600]],'imu-2').addService(googletag.pubads()).setTargeting('pos','mid');
+				googletag.defineSlot('/5055/b2b/it/sqlcourse/imu',[300,250],'imu-3').addService(googletag.pubads()).setTargeting('pos','low');
+				googletag.defineSlot('/5055/b2b/it/sqlcourse/lb',[728,90],'lb-1').addService(googletag.pubads()).setTargeting('pos','top');
+				googletag.defineSlot('/5055/b2b/it/sqlcourse/lb',[728,90],'lb-2').addService(googletag.pubads()).setTargeting('pos','low');
+				googletag.defineSlot('/5055/b2b/it/sqlcourse/sky',[160,600],'sky-1').addService(googletag.pubads()).setTargeting('pos','top');
+				googletag.defineOutOfPageSlot('/5055/b2b/it/sqlcourse/wa','wa-1').addService(googletag.pubads());
+	
+				googletag.pubads().setTargeting('kw',['database professional table sql dba interactive online beginners training']);
+					googletag.pubads().setTargeting('tax',['audience','product development programming languages','product servers database']);
+					googletag.pubads().setTargeting('path',['table.html']);
+					googletag.pubads().setTargeting('articlekey','3418710');
+				googletag.pubads().setTargeting('pagetype','other');
+				googletag.pubads().setTargeting('url','http://www.sqlcourse.com/table.html');
+				if(mbw<641){googletag.pubads().setTargeting('pfm','mob');}else{googletag.pubads().setTargeting('pfm','des');}
+				googletag.pubads().setTargeting('env','prod');
+				googletag.pubads().setTargeting('wtdlk',''+myWTDLK+'');
+				if(typeof _ml!='undefined'&&_ml.us){if(_ml.us.tp&&_ml.us.tp.length>0){googletag.pubads().setTargeting('mlt',''+_ml.us.tp+'');}}
+					googletag.pubads().setTargeting('ksg',Krux.segments);
+			googletag.pubads().setTargeting('kuid',Krux.user);
+	
+			eval(function(p,a,c,k,e,d){e=function(c){return c};if(!''.replace(/^/,String)){while(c--){d[c]=k[c]||c}k=[function(e){return d[e]}];e=function(){return'\\w+'};c=1};while(c--){if(k[c]){p=p.replace(new RegExp('\\b'+e(c)+'\\b','g'),k[c])}}return p}('0(5!=\'\'&&5!=\'2\'){1.3().4(\'5\',\'\'+5+\'\')}0(6!=\'\'&&6!=\'2\'){1.3().4(\'6\',\'\'+6+\'\')}0(9!=\'\'&&9!=\'2\'){1.3().4(\'9\',\'\'+9+\'\')}0(7!=\'\'&&7!=\'2\'){1.3().4(\'7\',\'\'+7+\'\')}0(8!=\'\'&&8!=\'2\'){1.3().4(\'8\',\'\'+8+\'\')}',10,10,'if|googletag|null|pubads|setTargeting|dn|jf|ir|noer|dr'.split('|'),0,{}))
+
+			googletag.pubads().enableSingleRequest();
+			googletag.pubads().collapseEmptyDivs();
+				googletag.pubads().enableSyncRendering();
+					googletag.disablePublisherConsole();
+	
+			googletag.enableServices();
+		</script>
+		<script type="text/javascript" src="./table_files/jquery-1.7.2-min.js"></script>
+		<script type="text/javascript" src="./table_files/common.js"></script>
+        <!-- Google Analytics -->
+        <script>
+            (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+                (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+                m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+            })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+            ga('create', 'UA-48216402-1', 'auto');
+            ga('send', 'pageview');
+        </script>
+        <!-- End Google Analytics -->
+    
+
+    <script>
+    window.webtrendsAsyncInit=function(){
+        var dcs=new Webtrends.dcs().init({
+            dcsid:"dcsccv5qs100008uwjj0yf5wa_4v9e",
+            domain:"www.qsstats.com",
+            timezone:-8,
+            i18n:true,
+            onsitedoms:"sqlcourse.com",
+            fpcdom:".sqlcourse.com",
+            plugins:{
+                //hm:{src:"//s.webtrends.com/js/webtrends.hm.js"}
+            }
+            }).track();
+    };
+    (function(){
+        var s=document.createElement("script"); s.async=true; s.src="/imageserver/common/v10/webtrends.min.js";    
+        var s2=document.getElementsByTagName("script")[0]; s2.parentNode.insertBefore(s,s2);
+    }());
+    </script>
+    <noscript>&lt;img alt="dcsimg" id="dcsimg" width="1" height="1" src="//www.qsstats.com/dcsccv5qs100008uwjj0yf5wa_4v9e/njs.gif?dcsuri=/index.php/table.html&amp;amp;WT.js=No&amp;amp;WT.tv=10.4.1&amp;amp;dcssip=www.sqlcourse.com&amp;amp;WT.qs_dlk=V547SQrIZ7kAAFUj8UwAAAAA&amp;"/&gt;</noscript>
+</head>
+
+<body marginwidth="0" leftmargin="0" rightmargin="0" bgcolor="#ffffff" onload="welcomeUser();"><div id="_AF_HSS_extension_installed" style="display: none !important;"></div>
+<!-- QS-AD: 'wa' start -->
+<script language="JavaScript">
+	var t=displayDFPTag("wa");
+	document.write(t);
+
+</script><div id="wa-1" style="height: 0px;">
+	<script type="text/javascript">
+		googletag.display('wa-1');
+	</script>
+</div>
+<style type="text/css">#wa-1_ad_container { height: 0px; }</style>
+
+<!-- QS-AD: 'wa' end -->    <div align="center">
+		<style type="text/css">
+<!--
+body { margin: 0; padding: 0;}
+.brandLogo a img { border: none;}
+.globalHeader { font: 100%/1.4 Arial, Helvetica, sans-serif; height: 25px; background-color: #111; background-image: url(/icom_includes/toolbars/globaltoolbar/img/header-bg.jpg); background-repeat: repeat-x;	background-position: center top;}
+.globalHeader .brandLogo { padding: 4px 0 0 .5em; float: left; }
+.globalHeader .brandLogo p { color: #666; font-family: Arial, sans-serif; font-size: 11px; padding: 0; margin: 0;}
+.globalHeader .login-register { text-align: right; padding: 4px .5em 0 .5em; /*float: right;*/}
+.globalHeader .login-register img{ cursor:pointer;}
+.globalHeader .logout { text-align: right;  }
+.globalHeader .logout .greeting span{ color: #797979; font-family: Arial, sans-serif; font-size: 13px; padding: 0; margin: 0;}
+.globalHeader .logout .greeting a{ color: #797979 !important; font-family: Arial, sans-serif; padding: 0; font-size: 13px; margin: 0;}
+.logout-link img{ cursor:pointer;margin-top:3px; margin-right:5px;}
+.clearfloat { clear:both; height:0;	font-size: 1px;	line-height: 0px;} 
+-->
+</style>
+<div class="globalHeader" id="ITBE-ACLHeader" style="display: block;"><div class="brandLogo"><p><a href="http://www.sqlcourse.com/about-itbe"><img src="./table_files/logo-itbe.png" alt="www.itbusinessedge.com" width="239" height="17" align="absmiddle"></a></p></div><div class="login-register" id="itbe-login-register" style="display:block;"><a href="http://www.sqlcourse.com/accountManagement?formType=loginForm" alt="Login Form" title="Login Form"><img src="./table_files/login-itbe.png" width="41" height="16" alt="Login" border="0"></a>&nbsp;<a href="http://www.sqlcourse.com/accountManagement?formType=registrationForm" alt="Registration Form" title="Registration Form"><img src="./table_files/register-itbe.png" width="56" height="16" alt="Register" border="0"></a></div><div class="logout" id="itbe-logout" style="display:none;"><span class="logout-link"><a href="http://www.sqlcourse.com/accountManagement?logout=true&amp;formType=logoutForm" alt="Logout" title="Logout"><img src="./table_files/logout-itbe.png" width="41" height="16" alt="Logout" border="0"></a></span></div><div class="clearfloat"></div></div>
+<div class="globalHeader" id="ITBE-NonACLHeader" style="display:none;"></div>
+<div class="globalHeader" id="Developer.com-ACLHeader" style="display:none;"></div>
+<div class="globalHeader" id="Developer.com-NonACLHeader" style="display:none;"></div>
+<div class="globalHeader" id="Developer.com-CustomToolbar" style="display:none;"></div>
+<div class="globalHeader" id="developerBrandForum" style="display:none;"></div>
+<div class="globalHeader" id="itbeBrandForum-CustomToolbar" style="display:none;"></div>
+<div class="globalHeader" id="itbeBrandForum" style="display:none;"></div>
+<div class="globalHeader" id="ZDE-ACLHeader" style="display:none;"></div>
+<div class="globalHeader" id="ZDE-NonACLHeader" style="display:none;"></div>
+<div class="globalHeader" id="BASELINE-ACLHeader" style="display:none;"></div>
+<div class="globalHeader" id="BASELINE-NonACLHeader" style="display:none;"></div>
+<div class="globalHeader" id="CINSIDER-ACLHeader" style="display:none;"></div>
+<div class="globalHeader" id="CINSIDER-NonACLHeader" style="display:none;"></div>
+<div class="globalHeader" id="CIOINSIGHT-ACLHeader" style="display:none;"></div>
+<div class="globalHeader" id="CIOINSIGHT-NonACLHeader" style="display:none;"></div>
+<div class="globalHeader" id="EWEEK-ACLHeader" style="display:none;"></div>
+<div class="globalHeader" id="EWEEK-NonACLHeader" style="display:none;"></div>
+<div class="globalHeader" id="WBG-ACLHeader" style="display:none;"></div>
+<script async="" language="Javascript" src="./table_files/brandingcode_new.js">
+</script> 
+    </div>
+
+    <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tbody><tr>
+            <td width="35" valign="top"><img src="./table_files/logo-left.gif" width="35" height="115" border="0"></td>
+            <td width="270" background="./table_files/top-bg2.gif" valign="middle" align="left"><img src="./table_files/sp.gif" width="270" height="1" alt=""><br><img src="./table_files/sqlogo.gif" width="249" height="49" alt="SQLCourse"><br><strong>Interactive Online SQL Training</strong></td>
+            <td background="./table_files/top-bg2.gif" valign="middle" width="99%">
+		    <div align="center" style="margin-top:5px;">
+        		<!-- QS-AD: 'lb' start -->
+<script language="JavaScript">
+	var t=displayDFPTag("lb");
+	document.write(t);
+
+</script><div id="lb-1">
+	<script type="text/javascript">
+		googletag.display('lb-1');
+	</script>
+</div>
+
+<!-- QS-AD: 'lb' end -->		    </div>
+            </td>
+
+        </tr>
+    </tbody></table>
+
+    <table background="http://www.sqlcourse.com/table.html" cellpadding="0" cellspacing="0" border="0" width="100%">
+        <tbody><tr><td bgcolor="#000000">
+            <table bgcolor="000000" background="http://www.sqlcourse.com/table.html" cellspacing="1" cellpadding="2" border="0" width="100%">
+                <tbody><tr><td bgcolor="#ffff99" background="http://www.sqlcourse.com/table.html" align="center" class="topnav"><a href="http://www.sqlcourse.com/">HOME</a></td>
+                    <td bgcolor="#ffff99" background="http://www.sqlcourse.com/table.html" align="center" class="topnav"><a href="http://databasejournal.com/news" rel="nofollow">News</a></td>
+                    <td bgcolor="#ffff99" background="http://www.sqlcourse.com/table.html" align="center" class="topnav"><a href="http://databasejournal.com/features/mssql" rel="nofollow">MS&nbsp;SQL</a></td>
+                    <td bgcolor="#ffff99" background="http://www.sqlcourse.com/table.html" align="center" class="topnav"><a href="http://databasejournal.com/features/oracle" rel="nofollow">Oracle</a></td>
+                    <td bgcolor="#ffff99" background="http://www.sqlcourse.com/table.html" align="center" class="topnav"><a href="http://databasejournal.com/features/db2" rel="nofollow">DB2</a></td>
+
+                    <td bgcolor="#ffff99" background="http://www.sqlcourse.com/table.html" align="center" class="topnav"><a href="http://databasejournal.com/features/msaccess" rel="nofollow">Access</a></td>
+                    <td bgcolor="#ffff99" background="http://www.sqlcourse.com/table.html" align="center" class="topnav"><a href="http://databasejournal.com/features/mysql" rel="nofollow">MySQL</a></td>
+                    <td bgcolor="#ffff99" background="http://www.sqlcourse.com/table.html" align="center" class="topnav"><a href="http://databasejournal.com/features/php" rel="nofollow">PHP</a></td>
+                    <td bgcolor="#ffff99" background="http://www.sqlcourse.com/table.html" align="center" class="topnav"><a href="http://databasejournal.com/sqletc" rel="nofollow">SQL&nbsp;Etc</a></td>
+                    <td bgcolor="#ffff99" background="http://www.sqlcourse.com/table.html" align="center" class="topnav"><a href="http://databasejournal.com/scripts" rel="nofollow">Scripts</a></td>
+                    <td bgcolor="#ffff99" background="http://www.sqlcourse.com/table.html" align="center" class="topnav"><a href="http://www.databasejournal.com/links/" rel="nofollow">Links</a></td>	  
+                    <td bgcolor="#ffff99" background="http://www.sqlcourse.com/table.html" align="center" class="topnav"><a href="http://forums.databasejournal.com/" rel="nofollow">Forums</a></td>
+
+                    <td bgcolor="#ffff99" background="http://www.sqlcourse.com/table.html" align="center" class="topnav"><a href="http://www.dbasupport.com/forums/">DBA&nbsp;Talk</a></td></tr>
+            </tbody></table>
+        </td></tr>
+    </tbody></table>
+
+    <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tbody><tr><td width="163" bgcolor="#ffcc00" background="./table_files/nav-bg.gif" valign="top">
+            <img src="./table_files/left-icom.gif" width="163" height="37" border="0">
+            <table background="http://www.sqlcourse.com/table.html" width="149" bgcolor="#000000" cellpadding="4" cellspacing="1" border="0">
+                <tbody><tr><td align="center"><a href="http://www.sqlcourse.com/" class="leftnav"><font color="#ffffff"><strong>SQL Courses</strong></font></a></td></tr>
+
+                <tr><td bgcolor="#ffffff">
+                    <table cellpadding="2" cellspacing="1" border="0">
+                        <tbody><tr><td class="leftnav" align="center" bgcolor="#ebd57d"><strong>1</strong></td><td class="leftnav"><a href="http://www.sqlcourse.com/intro.html">What is SQL?</a></td></tr><tr><td class="leftnav" align="center" bgcolor="#fef0b7"><strong>2</strong></td><td class="leftnav"><strong>Table basics</strong></td></tr><tr><td class="leftnav" align="center" bgcolor="#ebd57d"><strong>3</strong></td><td class="leftnav"><a href="http://www.sqlcourse.com/select.html">Selecting data</a></td></tr><tr><td class="leftnav" align="center" bgcolor="#ebd57d"><strong>4</strong></td><td class="leftnav"><a href="http://www.sqlcourse.com/create.html">Creating tables</a></td></tr><tr><td class="leftnav" align="center" bgcolor="#ebd57d"><strong>5</strong></td><td class="leftnav"><a href="http://www.sqlcourse.com/insert.html">Inserting into a table</a></td></tr><tr><td class="leftnav" align="center" bgcolor="#ebd57d"><strong>6</strong></td><td class="leftnav"><a href="http://www.sqlcourse.com/update.html">Updating records</a></td></tr><tr><td class="leftnav" align="center" bgcolor="#ebd57d"><strong>7</strong></td><td class="leftnav"><a href="http://www.sqlcourse.com/delete.html">Deleting records</a></td></tr><tr><td class="leftnav" align="center" bgcolor="#ebd57d"><strong>8</strong></td><td class="leftnav"><a href="http://www.sqlcourse.com/drop.html">Drop a table</a></td></tr><tr><td class="leftnav" align="center" bgcolor="#ebd57d"><strong>9</strong></td><td class="leftnav"><a href="http://www.sqlcourse2.com/">Advanced Queries</a></td></tr><tr><td class="leftnav" align="center" bgcolor="#ebd57d"><strong>10</strong></td><td class="leftnav"><a href="http://www.sqlcourse.com/cgi-bin/interpreter.cgi">Standalone SQL interpreter</a></td></tr><tr><td class="leftnav" align="center" bgcolor="#ebd57d"><strong>11</strong></td><td class="leftnav"><a href="http://www.sqlcourse.com/mediakit/index.html">Advertise on SQLCourse.com</a></td></tr><tr><td class="leftnav" align="center" bgcolor="#ebd57d"><strong>12</strong></td><td class="leftnav"><a href="http://www.databasejournal.com/links/">Database Links</a></td></tr><tr><td class="leftnav" align="center" bgcolor="#ebd57d"><strong>13</strong></td><td class="leftnav"><a href="http://www.justtechjobs.com/">Technology Jobs</a></td></tr>                    </tbody></table>
+                </td></tr>
+            </tbody></table>    
+            <table width="149" cellspacing="1" cellpadding="4" border="0">
+                <tbody><tr>
+	            <!-- BEGIN newsletter--> 
+    	        <form action="http://www.sqlcourse.com/accountManagement?formType=newsLetterSubscription" method="POST"></form>
+        	    <td valign="top">
+            	    <table cellpadding="0" cellspacing="0" border="0">
+                	    <tbody><tr><td colspan="2" valign="top"><strong>Free&nbsp;Newsletters:</strong></td></tr>
+                    	<tr>
+                        	<td valign="top"><input type="Checkbox" checked="true" value="1403" class="ACL_Form_Checkbox" name="NLALKeys"></td>
+	                        <td valign="middle"><span class="leftnav"><a href="http://databasejournal.com/" rel="nofollow"><strong>Database</strong>Daily</a></span></td>
+    	                </tr>
+        	        </tbody></table>
+
+            	    <table background="http://www.sqlcourse.com/table.html" cellpadding="0" cellspacing="0" border="0">
+                	    <tbody><tr>
+                        <td valign="middle"></td>
+                    	    <td valign="middle">&nbsp;<input type="hidden" name="submit" value="Submit"><input type="image" src="./table_files/subscribe.gif" border="0" alt="Subscribe"></td>
+                    </tr>
+	                </tbody></table>
+    	        </td>
+				
+            <!--End newsletter-->
+                </tr>
+            </tbody></table>
+    </td>
+
+     <td width="100%" bgcolor="#ffffff" valign="top">
+	  <table width="100%" cellpadding="0" cellspacing="0" border="0" background="./table_files/subnav-bg.gif">
+	    <tbody><tr>
+	      <td>
+				<img src="./table_files/subnav-left.gif" width="30" height="43" border="0" align="left" vspace="0" hspace="0">
+		  		<a href="http://databasejournal.com/" rel="nofollow"><img src="./table_files/dbjournal.gif" width="140" height="43" border="0"></a>
+				<a href="http://www.dbasupport.com/" rel="nofollow"><img src="./table_files/dbasupport.gif" width="145" height="43" border="0"></a>
+				<a href="http://www.sqlcourse2.com/" rel="nofollow"><img src="./table_files/sqlcourse2.gif" width="165" height="43" border="0"></a>
+	      </td>
+	      <td width="250">
+				<div style="position: relative;">
+					<div style="position:absolute; margin-top: -12px;">
+		                <form style="display:inline" method="post" action="http://www.databasejournal.com/postsearch">
+        		        <input type="hidden" name="IC_QueryDatabase" value="www.databasejournal.com www.sqlcourse.com www.sqlcourse2.com www.dbasupport.com products.databasejournal.com">
+		                <table background="http://www.sqlcourse.com/table.html" cellpadding="2" cellspacing="2" border="0">
+	                    <tbody><tr><td><font face="monospace"><input style="topnav" id="search_query" type="text" name="search_query" size="20" maxlength="50"></font></td>
+    	                <td><input type="image" src="./table_files/search.gif" border="0" name="submit" value="Go"></td></tr>
+        		        </tbody></table><br clear="left">
+						</form>
+					</div>
+				</div>
+	      </td>
+	    </tr>
+	  </tbody></table>
+
+      <img src="./table_files/sp.gif" width="454" height="6" alt=""><br>
+	  
+                  
+            <table cellpadding="0" cellspacing="0" border="0">
+                <tbody><tr>
+                    <td style="width:75%;" valign="top">
+                        <div style="padding:0px 5px 0px 5px;"><!-- QS-AD: 'ciu' start -->
+<script language="JavaScript">
+	var t=displayDFPTag("ciu");
+	document.write(t);
+
+</script><div id="ciu-1">
+	<script type="text/javascript">
+		googletag.display('ciu-1');
+	</script>
+</div>
+
+<!-- QS-AD: 'ciu' end --></div>
+                        
+                        <div style="padding:0px 5px 0px 5px;">
+                            <!--content_start-->
+                            <h1 style="clear:left;">Table Basics</h1>
+                            <p>A relational database system contains one or more objects called tables. The data or information for the database are stored in these tables. Tables are uniquely identified by their names and are comprised of columns and rows. Columns contain the column name, data type, and any other attributes for the column. Rows contain the records or data for the columns. Here is a sample table called "weather".</p>
+<p>city, state, high, and low are the columns. The rows contain the data for this table:</p>
+<table border="1" cellpadding="4" cellspacing="0">
+<tbody>
+<tr><th colspan="4">Weather</th></tr>
+<tr><th>city</th><th>state</th><th>high</th><th>low</th></tr>
+<tr>
+<td>Phoenix</td>
+<td>Arizona</td>
+<td>105</td>
+<td>90</td>
+</tr>
+<tr>
+<td>Tucson</td>
+<td>Arizona</td>
+<td>101</td>
+<td>92</td>
+</tr>
+<tr>
+<td>Flagstaff</td>
+<td>Arizona</td>
+<td>88</td>
+<td>69</td>
+</tr>
+<tr>
+<td>San Diego</td>
+<td>California</td>
+<td>77</td>
+<td>60</td>
+</tr>
+<tr>
+<td>Albuquerque</td>
+<td>New<br>Mexico</td>
+<td>80</td>
+<td>72</td>
+</tr>
+</tbody>
+</table>                            <!--content_stop-->
+                        </div>
+                        
+                    </td>
+                    <td style="width:25%;" valign="top">
+                       <!--==========RIGHT AD POSITION============-->
+<table align="right" border="0" cellpadding="0" cellspacing="0" width="162">
+	<tbody>
+		<tr>
+			<td width="13">
+                <img alt="" height="1" src="./table_files/sp.gif" width="12">
+            </td>
+			<td align="center" width="150">
+                <!-- QS-AD: 'imu' start -->
+<script language="JavaScript">
+	var t=displayDFPTag("imu");
+	document.write(t);
+
+</script><div id="imu-1">
+	<script type="text/javascript">
+		googletag.display('imu-1');
+	</script>
+</div>
+
+<!-- QS-AD: 'imu' end -->            </td>
+		</tr>
+		<tr>
+			<td width="12">
+                <img alt="" height="1" src="./table_files/sp.gif" width="12">
+            </td>
+			<td align="center" width="150">
+				<div style="height: 8px;">&nbsp;</div>
+				<div align="left" id="partners" style="border: 1px solid rgb(102, 102, 102); width: 336px;">
+					<!--<center>
+						<a href="http://www.jupitermedia.com/partners/"><img border="0" src="/img/sqlcourse_partners_hdr.jpg" width="336" /></a><br />
+						<br />
+						<a href="http://www.jupitermedia.com/partners/"><b>Become a Marketplace Partner</b></a><br />
+						&nbsp;</center>-->
+					<table border="0" cellpadding="0" cellspacing="0">
+						<tbody>
+                                                        						</tbody>
+					</table>
+				</div>
+			</td>
+		</tr>
+        <tr><td colspan="2"><img src="./table_files/sp.gif" width="1" height="6" alt=""></td></tr>
+	</tbody>
+</table>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                         <!--content_stop-->
+                                                <hr>
+                        <table align="center" cellpadding="2" cellspacing="1" border="0">
+                            <tbody><tr><th colspan="11"><a href="http://www.sqlcourse.com/">SQL Course Curriculum</a></th></tr>
+                            <tr>
+                            <td valign="middle" class="leftnav" align="center"><a href="http://www.sqlcourse.com/intro.html">&lt;&lt;previous</a>&nbsp;</td><td valign="middle" class="leftnav" align="center" width="20" bgcolor="#ebd57d"><a href="http://www.sqlcourse.com/intro.html"><strong>1</strong></a></td><td valign="middle" class="leftnav" align="center" width="20" bgcolor="#fef0b7"><strong>2</strong></td><td valign="middle" class="leftnav" align="center" width="20" bgcolor="#ebd57d"><a href="http://www.sqlcourse.com/select.html"><strong>3</strong></a></td><td valign="middle" class="leftnav" align="center" width="20" bgcolor="#ebd57d"><a href="http://www.sqlcourse.com/create.html"><strong>4</strong></a></td><td valign="middle" class="leftnav" align="center" width="20" bgcolor="#ebd57d"><a href="http://www.sqlcourse.com/insert.html"><strong>5</strong></a></td><td valign="middle" class="leftnav" align="center" width="20" bgcolor="#ebd57d"><a href="http://www.sqlcourse.com/update.html"><strong>6</strong></a></td><td valign="middle" class="leftnav" align="center" width="20" bgcolor="#ebd57d"><a href="http://www.sqlcourse.com/delete.html"><strong>7</strong></a></td><td valign="middle" class="leftnav" align="center" width="20" bgcolor="#ebd57d"><a href="http://www.sqlcourse.com/drop.html"><strong>8</strong></a></td><td valign="middle" class="leftnav" align="center" width="20" bgcolor="#ebd57d"><a href="http://www.sqlcourse2.com/"><strong>9</strong></a></td><td valign="middle" class="leftnav" align="center">&nbsp;<a href="http://www.sqlcourse.com/select.html">next&gt;&gt;</a></td>                            </tr>
+                        </tbody></table>
+                                            </td>
+                </tr>
+            </tbody></table>
+            
+        </td>
+		</tr></tbody></table>
+	
+  
+
+<table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tbody><tr>
+    <td width="100%" background="./table_files/btm-bg.gif"><img src="./table_files/nav-btm.gif" width="193" height="51" border="0" align="left" vspace="0" hspace="0"></td>
+
+  </tr>
+</tbody></table>
+
+<div align="center" style="margin:5px 0px 5px 0px;">
+    <!-- QS-AD: 'lb' start -->
+<script language="JavaScript">
+	var t=displayDFPTag("lb");
+	document.write(t);
+
+</script><div id="lb-2">
+	<script type="text/javascript">
+		googletag.display('lb-2');
+	</script>
+</div>
+
+<!-- QS-AD: 'lb' end --></div>
+
+
+<font face="Verdana, Arial, sans-serif" size="2"> <!-- Kontera exclusion div starts -->
+<div class="konafilter">
+
+<div style="margin:30px;">
+<style type="text/css">
+#developerBrand-footer{text-align:center;margin:0 auto}
+#footerlinks{font-size:12px;word-spacing:1px}
+#footerlinks a{color:#000;margin:5px 0 0}
+#itbeBrand-footer{text-align:center;margin:0 auto}
+#itbusinessedge-footer{text-align:center;margin:0 auto}
+#footercopyright{font-size:12px;margin:5px 0 0}
+#developerBrandForum-footer{text-align:center;margin:0 auto}
+#itbeBrandForum-footer{text-align:center;margin:0 auto}
+#eweek-truste-footer{text-align:center;margin:0 auto}
+#developerBrand-truste-footer{text-align:center;margin:0 auto}
+#itbeBrand-truste-footer{text-align:center;margin:0 auto}
+#itbusinessedge-truste-footer{text-align:center;margin:0 auto}
+.footerLogoClass{text-align:center;margin:0 auto}
+</style>
+<div id="developerBrand-footer" style="display:none"></div>
+<div id="itbeBrand-footer"><div id="itbelogo"><img src="./table_files/itbe.gif" border="0"></div><div id="footercopyright"> Property of Quinstreet Enterprise. </div><div id="footerlinks"><a rel="nofollow" href="http://www.sqlcourse.com/terms">Terms of Service</a> | <a rel="nofollow" href="http://www.sqlcourse.com/licensing">Licensing &amp; Reprints</a> | <a rel="nofollow" href="http://quinstreetenterprise.com/about_us" target="_blank">About Us</a> |  <a rel="nofollow" href="http://www.sqlcourse.com/privacy">Privacy Policy</a> | <a rel="nofollow" href="http://quinstreetenterprise.com/about_us#contactus" target="_blank">Advertise</a><br>Copyright 2016 QuinStreet Inc. All Rights Reserved.<noscript>Copyright 2014 Quinstreet Inc. All right reserved.&lt;noscript&gt;&lt;/div&gt;</noscript></div></div>
+<div id="itbusinessedge-footer" style="display:none"></div>
+<div id="zde-footer" style="display:none" class="footerLogoClass"></div>
+<div id="baseline-footer" style="display:none" class="footerLogoClass"></div>
+<div id="cinsider-footer" style="display:none" class="footerLogoClass"></div>
+<div id="cioinsight-footer" style="display:none" class="footerLogoClass"></div>
+<div id="eweek-footer" style="display:none" class="footerLogoClass"></div>
+<div id="enterpriseappstoday-footer" style="display:none" class="footerLogoClass"></div>
+<div id="eseminar-footer" style="display:none" class="footerLogoClass"></div>
+<div id="wbg-footer" style="display:none" class="footerLogoClass"></div>
+<div id="developerBrandForum-footer" style="display:none"></div>
+<div id="itbeBrandForum-footer" style="display:none"></div>
+<div id="eweek-truste-footer" style="display:none" class="footerLogoClass"></div>
+<div id="developerBrand-truste-footer" style="display:none"></div>
+<div id="itbeBrand-truste-footer" style="display:none"></div>
+<div id="itbusinessedge-truste-footer" style="display:none"></div>
+<script async="" language="Javascript" src="./table_files/footerbrandingcode.js">
+</script>
+</div>
+</div>
+</font>
+
+
+
+<iframe id="kx-proxy-Jd_NDrGw" src="./table_files/proxy.7026386e19f2b43fb687c0f795a87794.html" style="display: none; visibility: hidden; height: 0; width: 0;"></iframe><div class="kxhead" data-id="Jd_NDrGw" style="display:none !important;"><span class="kxtag kxinvisible" data-id="19515"><script type="text/javascript">Krux('social.init');</script></span><span class="kxtag kxinvisible" data-id="19524"><script>
+
+(function () {
+var user_logged_in = "dn";
+if(document.cookie.indexOf(user_logged_in) != -1){ 
+
+	Krux('set', { "user_attr_logged_in" : "yes" });
+	}
+
+
+// keywords
+Krux('scrape', { "page_attr_keywords" : {meta_name: 'keywords'} }) ; 
+// url_path
+Krux('scrape', { "page_attr_url_path_1" : {url_path: 1} }) ;
+Krux('scrape', { "page_attr_url_path_2" : {url_path: 2} }) ;
+Krux('scrape', { "page_attr_url_path_3" : {url_path: 3} }) ;
+  
+Krux('scrape', { "page_attr_domain": {url_domain: 2 } }) ;
+
+// cookies
+Krux('scrape', { 
+			user_attr_dn: {cookie: 'dn'},
+			user_attr_dr: {cookie: 'dr'},
+			user_attr_ir: {cookie: 'ir'},
+			user_attr_jf: {cookie: 'jf'},
+			user_attr_noer: {cookie: 'noer'}
+	} );
+
+})();
+</script></span><span class="kxtag kxinvisible" data-id="19554"><script>
+    (function() {
+        var kuid = Krux('get', 'user');
+        if (kuid) {
+            var prefix = location.protocol == 'https:' ? "https:" : "http:";
+            var kurl_params = encodeURIComponent("_kuid=" + kuid + "&_kdpid=8da8b14d-5569-4bec-bcea-722864ee8d06&dlxid=<na_id>&dlxdata=<na_da>");
+            var kurl = prefix + "//beacon.krxd.net/data.gif?" + kurl_params;
+            var dlx_url = '//r.nexac.com/e/getdata.xgi?dt=br&pkey=iefs40iefsj26&ru=' + kurl;
+            var i = new Image();
+            i.src = dlx_url;
+        }
+    })();
+</script></span><span class="kxtag kxinvisible" data-id="19555"><script>
+    (function() {
+        var kuid = Krux('get', 'user');
+        if (kuid) {
+            var prefix = location.protocol == 'https:' ? "https:" : "http:";
+            var kurl_params = encodeURIComponent("_kuid=" + kuid + "&_kdpid=bef9f122-393d-4c45-8d8d-32d8be7ac433&dlxid=<na_id>&dlxdata=<na_da>");
+            var kurl = prefix + "//beacon.krxd.net/data.gif?" + kurl_params;
+            var dlx_url = '//r.nexac.com/e/getdata.xgi?dt=br&pkey=iyzu39iyzud95&ru=' + kurl;
+            var i = new Image();
+            i.src = dlx_url;
+        }
+    })();
+</script></span><span class="kxtag kxinvisible" data-id="19556"><script>
+    (function() {
+        var allowUserMatch = function() {
+            var GDN_SITE_ID = '1282650';
+ 
+            if (Krux('get', 'config').params.client_type === 'marketer') {
+                try {
+                    var params = Krux('require:marketer').getParams(
+                            Krux('require:sizzle').find('script[src*="' + Krux('get', 'confid') + '"]')
+                    );
+                    return GDN_SITE_ID !== (params.siteid || params.kxsiteid);
+                }
+                catch (e) {
+                    // In case we don't find the script tag or the URL parser fails, just allow matching.
+                }
+            }
+            return true;
+        };
+         
+        var kuid = Krux('get', 'user');
+        if (allowUserMatch() && kuid) {
+            var prefix = location.protocol == 'https:' ? "https:" : "http:";
+            var kurl_params = encodeURIComponent("_kuid=" + kuid + "&_kdpid=8bf57916-aac8-4f01-a386-4baf103b3e1f&dlxid=<na_id>&dlxdata=<na_da>");
+            var kurl = prefix + "//beacon.krxd.net/data.gif?" + kurl_params;
+            var dlx_url = '//r.nexac.com/e/getdata.xgi?dt=br&pkey=bckw15bckwu20&ru=' + kurl;
+            var i = new Image();
+            i.src = dlx_url;
+        }
+    })();
+</script></span><span class="kxtag kxinvisible" data-id="19557"><script>
+    (function() {
+        var allowUserMatch = function() {
+            var GDN_SITE_ID = '1282650';
+
+            if (Krux('get', 'config').params.client_type === 'marketer') {
+                try {
+                    var params = Krux('require:marketer').getParams(
+                            Krux('require:sizzle').find('script[src*="' + Krux('get', 'confid') + '"]')
+                    );
+                    return GDN_SITE_ID !== (params.siteid || params.kxsiteid);
+                }
+                catch (e) {
+                    // In case we don't find the script tag or the URL parser fails, just allow matching.
+                }
+            }
+            return true;
+        };
+
+        var kuid = Krux('get', 'user');
+        if (allowUserMatch() && kuid) {
+            var prefix = location.protocol == 'https:' ? "https:" : "http:";
+            var kurl_params = encodeURIComponent("_kuid=" + kuid + "&_kdpid=d7158cb7-a851-4e3c-b7ab-cc9e815b2399&dlxid=<na_id>&dlxdata=<na_da>");
+            var kurl = prefix + "//beacon.krxd.net/data.gif?" + kurl_params;
+            var dlx_url = '//r.nexac.com/e/getdata.xgi?dt=br&pkey=gwjn34gwjnh86&ru=' + kurl;
+            var i = new Image();
+            i.src = dlx_url;
+        }
+    })();
+</script></span><span class="kxtag kxinvisible" data-id="19558"><script>
+    (function() {
+        var kuid = Krux('get', 'user');
+        if (kuid) {
+            var prefix = location.protocol == 'https:' ? "https:" : "http:";
+            var kurl_params = encodeURIComponent("_kuid=" + kuid + "&_kdpid=536f0daa-aaaa-4d9e-9a25-dde40646786a&dlxid=<na_id>&dlxdata=<na_da>");
+            var kurl = prefix + "//beacon.krxd.net/data.gif?" + kurl_params;
+            var dlx_url = '//r.nexac.com/e/getdata.xgi?dt=br&pkey=iefs40iefsj26&ru=' + kurl;
+            var i = new Image();
+            i.src = dlx_url;
+        }
+    })();
+</script></span><span class="kxtag kxinvisible" data-id="19559"><script>
+    (function() {
+        var kuid = Krux('get', 'user');
+        if (kuid) {
+            var prefix = location.protocol == 'https:' ? "https:" : "http:";
+            var kurl_params = encodeURIComponent("_kuid=" + kuid + "&_kdpid=7c6392c9-e878-492c-8b14-bf06e3828ebd&dlxid=<na_id>&dlxdata=<na_da>");
+            var kurl = prefix + "//beacon.krxd.net/data.gif?" + kurl_params;
+            var dlx_url = '//r.nexac.com/e/getdata.xgi?dt=br&pkey=rowp70rowpu60&ru=' + kurl;
+            var i = new Image();
+            i.src = dlx_url;
+        }
+    })();
+</script></span><span class="kxtag kxinvisible" data-id="19560"><script>
+    (function() {
+        var allowUserMatch = function() {
+            var GDN_SITE_ID = '1282650';
+
+            if (Krux('get', 'config').params.client_type === 'marketer') {
+                try {
+                    var params = Krux('require:marketer').getParams(
+                            Krux('require:sizzle').find('script[src*="' + Krux('get', 'confid') + '"]')
+                    );
+                    return GDN_SITE_ID !== (params.siteid || params.kxsiteid);
+                }
+                catch (e) {
+                    // In case we don't find the script tag or the URL parser fails, just allow matching.
+                }
+            }
+            return true;
+        };
+        
+        var kuid = Krux('get', 'user');
+        if (allowUserMatch() && kuid) {
+            var prefix = location.protocol == 'https:' ? "https:" : "http:";
+            var kurl_params = encodeURIComponent("_kuid=" + kuid + "&_kdpid=bb8ae0e2-9cd7-45b2-ad37-7737269627d8&dlxid=<na_id>&dlxdata=<na_da>");
+            var kurl = prefix + "//beacon.krxd.net/data.gif?" + kurl_params;
+            var dlx_url = '//r.nexac.com/e/getdata.xgi?dt=br&pkey=rsxs71rsxsk73&ru=' + kurl;
+            var i = new Image();
+            i.src = dlx_url;
+        }
+    })();
+</script></span><span class="kxtag kxinvisible" data-id="19562"><script>
+    (function() {
+        var allowUserMatch = function() {
+            var GDN_SITE_ID = '1282650';
+ 
+            if (Krux('get', 'config').params.client_type === 'marketer') {
+                try {
+                    var params = Krux('require:marketer').getParams(
+                            Krux('require:sizzle').find('script[src*="' + Krux('get', 'confid') + '"]')
+                    );
+                    return GDN_SITE_ID !== (params.siteid || params.kxsiteid);
+                }
+                catch (e) {
+                    // In case we don't find the script tag or the URL parser fails, just allow matching.
+                }
+            }
+            return true;
+        };
+         
+        var kuid = Krux('get', 'user');
+        if (allowUserMatch() && kuid) {
+            var prefix = location.protocol == 'https:' ? "https:" : "http:";
+            var kurl_params = encodeURIComponent("_kuid=" + kuid + "&_kdpid=afae52b8-1e27-4650-bd6a-ed7d982f5a6a&dlxid=<na_id>&dlxdata=<na_da>");
+            var kurl = prefix + "//beacon.krxd.net/data.gif?" + kurl_params;
+            var dlx_url = '//r.nexac.com/e/getdata.xgi?dt=br&pkey=iqbg41iqbgj68&ru=' + kurl;
+            new Image().src = dlx_url;
+          
+        }
+    })();
+</script></span></div></body></html>

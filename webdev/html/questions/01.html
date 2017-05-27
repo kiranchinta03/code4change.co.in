@@ -1,0 +1,362 @@
+<html>
+<head>
+<title>HTML - Questions</title>
+<script type="text/javascript" src="../../../js/jquery-3.1.0.min.js"></script>
+<script type="text/javascript">
+$(document).ready(function(e){
+	$('div main nav ul li').click(function(){
+		$(this).toggleClass('tap');
+	});
+});
+
+</script>
+<link rel="shortcut icon" href="../../../images/icon.ico" type="image/ico">
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+<link rel="stylesheet" href="https://code.getmdl.io/1.2.1/material.orange-teal.min.css" />
+<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:300,400,500,700" type="text/css">
+<script defer src="../../../mdl/material.min.js"></script>
+<style>
+	.demo-card.mdl-card{width:950px;overflow:hidden;text-decoration:none;}
+	.demo-card > .mdl-card__title{color:#fff;height:auto;background:url('images/oracle.png') center/cover;text-decoration:none;}
+	.demo-card > .mdl-card__title a{color: inherit;text-decoration:none;}
+	.demo-card > .mdl-card__menu{color:#fff;text-decoration:none;}	
+	pre{font-family:inherit;font-size:15px}
+	p{margin:0px;padding:0px;}
+	.mdl-layout mdl-js-layout mdl-layout--fixed-header mdl-mini-footer{margin-bottom:0px;clear:both;}
+	footer img:hover{transform:scale(1.2)}
+
+</style>
+
+<style>
+*{padding:0;margin:0;}	
+a{text-decoration:none;}
+	li{list-style:none;}
+	div main nav{width:300px;background:white;box-shadow: 0px 0px 3px;}
+	div main nav ul ul {background:#fee084}
+	div main nav ul ul a:before{content:'\203A';margin-right:20px;}
+	div main nav a{display:block; padding: 10px 0 10px 20px;color:black;border-bottom:1.5px solid black}
+	div main nav a:hover{background:#fecd39;}
+	div main nav ul ul{display:none}
+	div main nav ul li:hover ul{display:block}
+	div main nav ul span:after{content:'\203A';float:right;margin-right:20px;-webkit-transform:rotate(90deg);-moz-transform:rotate(90deg)}
+</style>
+<style>
+pre.prettyprint.tryit {min-height:37px;margin-left:10px;margin-right:10px;font-family:calibri; background: #eee url(/html/images/try-it.jpg) top right no-repeat !important}div.feature-box div.feature-box-icon, .col-md-3 .course-box, li.heading, div.footer-copyright { background: #88c53a url(/images/pattern.png) repeat center center !important;}
+.sub-main-menu .sub-menuu div:hover, .sub-main-menu .viewall, header nav ul.nav-main li a:hover, button.btn-responsive-nav, header div.search button.btn-default { background: #88c53a !important;}
+.submenu-item{ border-bottom: 2px solid #88c53a !important; border-top: 2px solid #88c53a !important; }
+</style>
+</head>
+
+<body>
+		<div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+
+		<header class="mdl-layout__header">
+			<div class="mdl-layout__header-row">
+				<span class="mdl-layout-title"><a href="../../../index.html"><img src="../../../images/icon.ico" width="50" height="50"></a></span>
+				<div class="mdl-layout-spacer"></div>			
+			</div>
+		</header>
+
+		<div class="mdl-layout__drawer" style="margin-left:-38px;width:280px">
+			<span class="mdl-layout-title"><img src="../../../images/banner.png" width="240" height="65"></span>.
+			<nav class="mdl-navigation" style="margin-left=-20px">
+				<a class="mdl-navigation__link" href="../../../c.html">		<img src="../../../images/logo/c.png" width="35" height="35">   C LANGUAGE</a>
+				<a class="mdl-navigation__link" href="../../../c++.html">	<img src="../../../images/logo/c++.png" width="35" height="35">    C++ PROGRAMING</a>
+				<a class="mdl-navigation__link" href="../../../java.html">	<img src="../../../images/logo/java.png" width="35" height="35">  JAVA</a>
+				<a class="mdl-navigation__link" href="../../../oracle.html"><img src="../../../images/logo/oracle.png" width="30" height="30"> ORACLE</a>
+				<a class="mdl-navigation__link" href="../../../python.html"><img src="../../../images/logo/python.png" width="30" height="30"> PYTHON</a>
+				<a class="mdl-navigation__link" href="../../../webdev.html"><img src="../../../images/logo/webdev.png" width="35" height="35"> WEB DEVELOPMENT</a>
+				<a class="mdl-navigation__link" href="../../../oracle_ebs/docs/00.html"><img src="../../../images/logo/o_ebs.png" width="35" height="35"> ORACLE_EBS</a>
+			</nav>
+		</div>
+	<main>	
+		<table class="mdl-data-table mdl-js-data-table mdl-data-table--selectable mdl-shadow--2dp" style="position:absolute;margin-top:25px;margin-left:150px;width:955px;">
+  		<thead> </thead>
+  		<tbody>
+    		<tr> <td class="mdl-data-table__cell--non-numeric"><center><font size="5"><b>HTML Interview Questions</b></font></center></td></tr>
+		</tbody>
+		</table>
+		
+		<div class="page-content" style="position:static;margin-top:70px;margin-left:135px;margin-bottom:50px">
+		<div class="mdl-grid">
+		<div class="mdl-cell mdl-cell--10col" style="width:1500px;">
+		<div class="mdl-card mdl-shadow--2dp demo-card" style="height:auto">
+	<p>	
+	<pre>
+	<b><u><font color="red">1) What is HTML?</u></font></b>
+	HTML is short for HyperText Markup Language, and is the language of the World Wide Web. It is the standard text formatting language
+	used for creating and displaying pages on the Web. HTML documents are made up of two things: the content and the tags that formats it 
+	for proper display on pages.
+
+	<b><u><font color="red">2) What are tags?</u></font></b>
+	Content is placed in between HTML tags in order to properly format it. It makes use of the less than symbol (&lt;) and the greater than
+	symbol (&gt;). A slash symbol is also used as a closing tag. For example:
+<pre class="prettyprint notranslate tryit">	
+	&lt;strongt;sample&lt;/strong&gt;
+</pre>
+	<b><u><font color="red">3) Do all HTML tags come in pair?</u></font></b>
+	No, there are single HTML tags that does not need a closing tag. Examples are the &lt;img&gt; tag and &lt;br&gt; tags.
+
+	<b><u><font color="red">4) What are some of the common lists that can be used when designing a page?</u></font></b>
+	You can insert any or a combination of the following list types:
+	– ordered list
+	– unordered list
+	– definition list
+	– menu list
+	– directory list
+	Each of this list types makes use of a different tag set to compose
+
+	<b><u><font color="red">5) How do you insert a comment in html?</u></font></b>
+	Comments in html begins with “&lt;!–“nd ends with “–&gt;”. For example:
+<pre class="prettyprint notranslate tryit">	
+	&lt;!-- A SAMPLE COMMENT --&gt;
+</pre>
+	
+	<b><u><font color="red">6) Do all character entities display properly on all systems?</u></font></b>
+	No, there are some character entities that cannot be displayed when the operating system that the browser is running on does not support
+	the characters. When that happens, these characters are displayed as boxes.
+
+	<b><u><font color="red">7) What is image map?</u></font></b>
+	Image map lets you link to many different web pages using a single image. You can define shapes in images that you want to make part 
+	of an image mapping.
+
+	<b><u><font color="red">8 ) What is the advantage of collapsing white space?</u></font></b>
+	White spaces are blank sequence of space characters, which is actually treated as a single space character in html. Because the browser
+	collapses multiple space into a single space, you can indent lines of text without worrying about multiple spaces. This enables you to 
+	organize the html code into a much more readable format.
+
+
+	<b><u><font color="red">9) Can attribute values be set to anything or are there specific values that they accept?</u></font></b>
+	Some attribute values can be set to only predefined values. Other attributes can accept any numerical value that represents the number 
+	of pixels for a size.
+
+	<b><u><font color="red">10) How do you insert a copyright symbol on a browser page?</u></font></b>
+	To insert the copyright symbol, you need to type &copy; or & #169; in an HTML file.
+
+	<b><u><font color="red">11) How do you create links to sections within the same page?</u></font></b>
+	Links can be created using the &lt;a&gt; tag, with referencing through the use of the number (#) symbol. For example, you can have one
+	line as &lt;a href=”#topmost”&gt;BACK TO TOP&lt;/a&gt;, which would result in the words “BACK TO TOP” appearing on the webpage and links
+	to a bookmark named topmost. You then create a separate tag command like &lt;a name=”topmost”&gt; somewhere on the top of the same 
+	webpage so that the user will be linked to that spot when he clicked on “BACK TO TOP”.
+	
+	<b><u><font color="red">12) Is there any way to keep list elements straight in an html file?</u></font></b>
+	By using indents, you can keep the list elements straight. If you indent each subnested list in further than the parent list that 
+	contains it, you can at a glance determine the various lists and the elements that it contains.
+
+	<b><u><font color="red">13) If you see a web address on a magazine, to which web page does it point?</u></font></b>
+	Every web page on the web can have a separate web address. Most of these addresses are relative to the top-most web page. The published 
+	web address that appears within magazines typically points this top-most page. From this top level page, you can access all other pages
+	within the web site.
+	
+	<b><u><font color="red">14) What is the use of using alternative text in image mapping?</u></font></b>
+	When you use image maps, it can easily become confusing and difficult to determine which hotspots corresponds with which links. Using
+	alternative text lets you put a descriptive text on each hotspot link.
+
+	<b><u><font color="red">15) Do older html files work on newer browsers?</u></font></b>
+	Yes, older html files are compliant to the HTML standard. Most older files work on the newer browsers, though some features may not work.
+	
+	<b><u><font color="red">16) Does a hyperlink apply to text only?</u></font></b>
+	No, hyperlinks can be used on text as well as images. That means you can convert an image into a link that will allow user to link to 
+	another page when clicked. Just surround the image within the &lt;a href=” “&gt;…&lt;/a&gt; tag combinations.
+
+	<b><u><font color="red">17) If the user’s operating system does not support the needed character, how can the symbol be represented?</u></font></b>
+	In cases wherein their operating system does not support a particular character, it is still possible to display that character by 
+	showing it as an image instead.
+
+	<b><u><font color="red">18) How do you change the number type in the middle of a list?</u></font></b>
+	The &lt;li&gt; tag includes two attributes – type and value. The type attribute can be used to change the numbering type for any list 
+	item.
+	The value attribute can change the number index.
+	
+	<b><u><font color="red">19) What are style sheets?</u></font></b>
+	Style sheets enable you to build consistent, transportable, and well-defined style templates. These templates can be linked to several 
+	different web pages, making it easy to maintain and change the look and feel of all the web pages within a site.
+
+	<b><u><font color="red">20) What bullet types are available?</u></font></b>
+	With ordered lists, you can select to use a number of different list types including alphabetical and Roman numerals. The type attribute
+	for unordered lists can be set to disc, square, or circle.
+
+	<b><u><font color="red">21) How do you create multicolored text in a webpage?</u></font></b>
+	To create text with different colors, use the &lt;font color=”color”&gt;…&lt;/font&gt; tags for every character that you want to apply a color. 
+	You can use this tag combination as many times as needed, surrounding a single character or an entire word.
+
+	<b><u><font color="red">22) Why are there both numerical and named character entity values?</u></font></b>
+	The numerical values are taken from the ASCII values for the various characters, but these can be difficult to remember. Because of 
+	this, named character entity values were created to make it easier for web page designers to use.
+
+	<b><u><font color="red">23) Write a HTML table tag sequence that outputs the following:</u></font></b>
+	50 pcs 100 500
+	10 pcs 5 50
+<pre class="prettyprint notranslate tryit">	
+	&lt;table&gt; 
+		&lt;tr&gt; 
+			&lt;td&gt;50 pcs&lt;/td&gt; 
+			&lt;td&gt;100&lt;/td&gt; 
+			&lt;td&gt;500&lt;/td&gt; 
+		&lt;/tr&gt; 
+		&lt;tr&gt; 
+			&lt;td&gt;10 pcs&lt;/td&gt; 
+			&lt;td&gt;5&lt;/td&gt; 
+			&lt;td&gt;50&lt;/td&gt; 
+		&lt;/tr&gt; 
+	&lt;/table&gt;
+	1
+	2
+	3	
+	4
+	5
+	6
+	7
+	8
+	9
+	10
+	11
+	12
+	&lt;table&gt; 
+		&lt;tr&gt; 
+			&lt;td&gt;50 pcs&lt;/td&gt; 
+			&lt;td&gt;100&lt;/td&gt; 
+			&lt;td&gt;500&lt;/td&gt; 
+		&lt;/tr&gt; 
+		&lt;tr&gt; 
+			&lt;td&gt;10 pcs&lt;/td&gt; 
+			&lt;td&gt;5&lt;/td&gt; 
+			&lt;td&gt;50&lt;/td&gt; 
+		&lt;/tr&gt; 
+	&lt;/table&gt;</pre>
+	
+	<b><u><font color="red">24) What is the advantage of grouping several checkboxes together?</u></font></b>
+	Although checkboxes don’t affect one another, grouping checkboxes together helps to organize them. Checkbox buttons can have their 
+	own name and do not need to belong to a group. A single web page can have many different groups of checkboxes.
+
+	<b><u><font color="red">25) What will happen if you overlap sets of tags?</u></font></b>
+	If two sets of html tags are overlapped, only the first tag will be recognized. You will recognize this problem when the text does not
+	display properly on the browser screen.
+
+	<b><u><font color="red">26) What are applets?</u></font></b>
+	Applets are small programs that can be embedded within web pages to perform some specific functionality, such as computations, 
+	animations, and information processing. Applets are written using the Java language.
+
+	<b><u><font color="red">27) What if there is no text between the tags or if a text was omitted by mistake? Will it affect the display of the html file?</u></font></b>
+	If there is no text between the tags, then there is nothing to format, so no formatting will appear. Some tags, especially tags without
+	a closing tag like the &lt;img&gt; tag, do not require any text between them.
+
+	<b><u><font color="red">28) Is it possible to set specific colors for table borders?</u></font></b>
+	You can specify a border color using style sheets, but the colors for a table that does not use style sheets will be the same as the 
+	text color.
+
+	<b><u><font color="red">29) How do you create a link that will connect to another web page when clicked?</u></font></b>
+	To create hyperlinks, or links that connect to another web page, use the href tag. The general format for this is: 
+	&lt;a href=”site”&gt;text&lt;/a&gt;
+	Replace “site” with the actual page url that is supposed to be linked to when the text is clicked.
+
+	<b><u><font color="red">30) What other ways can be used to align images and wrap text?</u></font></b>
+	Tables can be used to position text and images. Another useful way to wrap text around an image is to use style sheets.
+
+	<b><u><font color="red">31) Can a single text link point to two different web pages?</u></font></b>
+	No. The &lt;a&gt; tag can accept only a single href attribute, and it can point to only a single web page.
+	
+	<b><u><font color="red">32) What is the difference between the directory and menu lists and the unordered list?</u></font></b>
+	The key differences is that the directory and menu lists do not include attributes for changing the bullet style.
+
+	<b><u><font color="red">33) Can you change the color of bullets?</u></font></b>
+	The bullet color is always the same as that of the first character in the list litem. If you surround the &lt;li&gt; and the first character
+	with a set of &lt;font&gt; tags with the color attribute set, the bullet color and the first character will be a different color from the 
+	text.
+
+	<b><u><font color="red">34) What are the limits of the text field size?</u></font></b>
+	The default size for a text field is around 13 characters, but if you include the size attribute, you can set the size value to be 
+	as low as 1. The maximum size value will be determined by the browser width. If the size attribute is set to 0, the size will be set
+	to the default size of 13 characters.
+	
+	<b><u><font color="red">35) Do &lt;th&gt; tags always need to come at the start of a row or column?</u></font></b>
+	Any &lt;tr&gt; tag can be changed to a &lt;th&gt; tag. This causes the text contained within the &lt;th&gt; tag to be displayed as bold in the browser.
+	Although &lt;th&gt; tags are mainly used for headings, they do not need to be used exclusively for headings.
+
+	<b><u><font color="red">36) What is the relationship between the border and rule attributes?</u></font></b>
+	Default cell borders, with a thickness of 1 pixel, are automatically added between cells if the border attribute is set to a nonzero 
+	value. Likewise, If the border attribute is not included, a default 1-pixel border appears if the rules attribute is added to the
+	&lt;table&gt; tag.
+
+	<b><u><font color="red">37) What is a marquee?</u></font></b>
+	A marquee allows you to put a scrolling text in a web page. To do this, place whatever text you want to appear scrolling within 
+	the &lt;marquee&gt; and &lt;/marquee&gt; tags.
+
+	<b><u><font color="red">38) How do you create a text on a webpage that will allow you to send an email when clicked?</u></font></b>
+	To change a text into a clickable link to send email, use the mailto command within the href tag. The format is as follows:
+<pre class="prettyprint notranslate tryit">	
+	&lt;A HREF=”mailto:youremailaddress”&gt;text to be clicked&lt;/A&gt;</pre>
+	
+	<b><u><font color="red">39) Are &lt;br&gt; tags the only way to separate sections of text?</u></font></b>
+	No. The &lt;br&gt; tag is only one way to separate lines of text. Other tags, like the &lt;p&gt; tag and &lt;blockquote&gt; tag, also separate sections 
+	of text.
+
+	<b><u><font color="red">40) Are there instances where text will appear outside of the browser?</u></font></b>
+	By default, the text is wrapped to appear within the browser window. However, if the text is part of a table cell with a defined width, 
+	the text could extend beyond the browser window.
+
+	<b><u><font color="red">41) How are active links different from normal links?</u></font></b>
+	The default color for normal and active links is blue. Some browsers recognize an active link when the mouse cursor is placed over that
+	link; others recognize active links when the link has the focus. Those that don’t have a mouse cursor over that link is considered a 
+	normal link.
+
+	<b><u><font color="red">42) Do style sheets limit the number of new style definitions that can be included within the brackets?</u></font></b>
+	Style sheets do not limit the number of style definitions that can be included within the brackets for a given selector. Every new style
+	definition, however, must be separated from the others by a semicolon symbol.
+
+	<b><u><font color="red">43) Can I specify fractional weight values such as 670 or 973 for font weight?</u></font></b>
+	Implementation largely depends on the browser, but the standard does not support fractional weight values. Acceptable values must end 
+	with two zeroes.
+
+	<b><u><font color="red">44) What is the hierarchy that is being followed when it comes to style sheets?</u></font></b>
+	If a single selector includes three different style definitions, the definition that is closest to the actual tag takes precedence.
+	Inline style takes priority over embedded style sheets, which takes priority over external style sheets.
+
+	<b><u><font color="red">45) Can several selectors with class names be grouped together?</u></font></b>
+	You can define several selectors with the same style definition by separating them with commas. This same technique also works for
+	selectors with class names.
+
+	<b><u><font color="red">46) What happens if you open the external CSS file in a browser?</u></font></b>
+	If you try to open the external CSS file in a browser, the browser cannot open the file, because the file has a different extension.
+	The only way to use an external CSS file is to reference it using &lt;link/&gt; tag within another html document.
+
+	<b><u><font color="red">47) How do you make a picture into a background image of a web page?</u></font></b>
+	To do this, place a tag code after the &lt;/head&gt; tag as follows:
+<pre class="prettyprint notranslate tryit">
+	&lt;body background = “image.gif”&gt;</pre>
+	Replace image.gif with the name of your image file. This will take the picture and make it the background image of your web page.
+
+	<b><u><font color="red">48) What happens if the list-style-type property is used on a non-list element like a paragraph?</u></font></b>
+	If the list-style-type property is used on a non-list element like a paragraph, the property will be ignored and have no effect on 
+	the paragraph.
+
+	<b><u><font color="red">49) When is it appropriate to use frames?</u></font></b>
+	Frames can make navigating a site much easier. If the main links to the site are located in a frame that appears at the top or along
+	the edge of the browser, the content for those links can be displayed in the remainder of the browser window.
+
+	<b><u><font color="red">50) What happens if the number of values in the rows or cols attribute doesn’t add up to 100 percent?</u></font></b>
+	The browser sizes the frames relative to the total sum of the values. If the cols attribute is set to 100%, 200%, the browser displays
+	two vertical frames with the second being twice as big as the first.
+	</pre>					
+	</p>
+
+
+</main>
+
+		<footer class="mdl-mini-footer"  style="margin-top:140px;">
+			<div class="mdl-mini-footer--left-section" style="margin-top:-15px;">
+				<div class="mdl-logo"><b>Fallow us on</b></div>
+				<ul class="mdl-mini-footer--link-list" style="margin-top:-15px;margin-left:105px;">
+					<li><a href="https://facebook.com/c4c.ady" style="text-decoration:none;">	<img src="../../../images/social/facebook.png" 	width="35" height="35" 	 style="position:relative;bottom:-12px"></a></li>
+					<li><a href="https://twitter.com/c4c_ady" style="text-decoration:none;">   	<img src="../../../images/social/twitter.png" 	width="35" height="35"   style="position:relative;bottom:-12px"></a>  </li>
+					<li><a href="https://www.youtube.com/channel/UCDjj2kpaHyDbC9jpD1tEJ4Q" >	<img src="../../../images/social/youtube.png"  	width="35" height="35"   style="position:relative;bottom:-12px"></a></li>
+					<li><a href="https://instagram.com/c4c_ady" style="text-decoration:none;">	<img src="../../../images/social/instagram.png" 	width="35" height="35" 	 style="position:relative;bottom:-12px"></a></li>
+				</ul>
+			</div>
+		</footer>
+
+	
+</div>
+
+</body>
+</html>

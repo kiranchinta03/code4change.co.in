@@ -1,0 +1,240 @@
+<html>
+<head>
+<title>SQL - Date & Conversion Functions</title>
+	<link rel="shortcut icon" href="../../../images/icon.ico" type="image/ico">
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+<link rel="stylesheet" href="https://code.getmdl.io/1.1.3/material.red-light_blue.min.css" />
+<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:300,400,500,700" type="text/css">
+<script defer src="../../../mdl/material.min.js"></script>
+<style>
+	.demo-card.mdl-card{width:925px;overflow:hidden;text-decoration:none;}
+	.demo-card > .mdl-card__title{color:#fff;height:auto;background:url('images/oracle.png') center/cover;text-decoration:none;}
+	.demo-card > .mdl-card__title a{color: inherit;text-decoration:none;}
+	.demo-card > .mdl-card__menu{color:#fff;text-decoration:none;}	
+	pre{font-family:inherit;font-size:15px}
+	p{margin:0px;padding:0px;}
+	.mdl-layout mdl-js-layout mdl-layout--fixed-header mdl-mini-footer{margin-bottom:0px;clear:both;}
+</style>
+
+</head>
+
+<body>
+		<div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+
+		<header class="mdl-layout__header">
+			<div class="mdl-layout__header-row">
+				<span class="mdl-layout-title"><a href="../../../index.html"><img src="../../../images/icon.ico" width="50" height="50"></a></span>
+				<div class="mdl-layout-spacer"></div>
+				
+				
+				</div>
+		</header>
+		<div class="mdl-layout__drawer" style="margin-left:-38px;width:280px">
+			<span class="mdl-layout-title"><img src="../../../images/banner.png" width="240" height="65"></span>
+			<nav class="mdl-navigation" style="margin-left=-20px">
+				<a class="mdl-navigation__link" href="../../../c.html"><img src="../../../images/logo/c.png" width="35" height="35">   C LANGUAGE</a>
+				<a class="mdl-navigation__link" href="../../../c++.html"><img src="../../../images/logo/c++.png" width="35" height="35">    C++ PROGRAMING</a>
+				<a class="mdl-navigation__link" href="../../../java.html"><img src="../../../images/logo/java.png" width="35" height="35">  JAVA</a>
+				<a class="mdl-navigation__link" href="../../../oracle.html"><img src="../../../images/logo/oracle.png" width="30" height="30"> ORACLE</a>
+				<a class="mdl-navigation__link" href="../../../python.html"><img src="../../../images/logo/python.png" width="30" height="30"> PYTHON</a>
+				<a class="mdl-navigation__link" href="../../../webdev.html"><img src="../../../images/logo/webdev.png" width="35" height="35"> WEB DEVELOPMENT</a>
+				<a class="mdl-navigation__link" href="../../../oracle_ebs/docs/00.html"><img src="../../../images/logo/o_ebs.png" width="35" height="35"> ORACLE_EBS</a>
+			</nav>
+		</div>
+	<main >	
+		<table class="mdl-data-table mdl-js-data-table mdl-data-table--selectable mdl-shadow--2dp" style="margin-top:25px;margin-left:100px;margin-bottom:15px;">
+  		
+  		<tbody >
+    		<tr> <td class="mdl-data-table__cell--non-numeric"><a href="01.html" style="text-decoration:none;color:inherit">			1.Introduction</a></td></tr>
+    		<tr> <td class="mdl-data-table__cell--non-numeric"><a href="02.html" style="text-decoration:none;color:inherit">			2. Data Types</a></td></tr>
+    		<tr> <td class="mdl-data-table__cell--non-numeric"><a href="03.html" style="text-decoration:none;color:inherit">			3. DDL Commands</a></td></tr>
+		<tr> <td class="mdl-data-table__cell--non-numeric"><a href="04.html" style="text-decoration:none;color:inherit">			4. DML & DQL Commands</a></td></tr>
+    		<tr> <td class="mdl-data-table__cell--non-numeric"><a href="05.html" style="text-decoration:none;color:inherit">			5. TCL Commands</a></td> </tr>
+    		<tr> <td class="mdl-data-table__cell--non-numeric"><a href="06.html" style="text-decoration:none;color:inherit">			6. DCL Commands</a></td> </tr>
+    		<tr> <td class="mdl-data-table__cell--non-numeric"><a href="07.html" style="text-decoration:none;color:inherit">			7. Clauses</td> </tr>
+    		<tr> <td class="mdl-data-table__cell--non-numeric"><a href="08.html" style="text-decoration:none;color:inherit">			8. Operations</a></a></td></tr>
+		<tr> <td class="mdl-data-table__cell--non-numeric"><a href="09.html" style="text-decoration:none;color:inherit">			9. Number & String Functions</a></td></tr>
+    		<tr> <td class="mdl-data-table__cell--non-numeric"><a href="10.html" style="text-decoration:none;color:inherit"><font size="3"><b>	10. Date & Conversion Functions</b></font></a></td></tr>
+    		<tr> <td class="mdl-data-table__cell--non-numeric"><a href="11.html" style="text-decoration:none;color:inherit">			11. General & Aggregate Functions</a></td> </tr>
+		<tr> <td class="mdl-data-table__cell--non-numeric"><a href="12.html" style="text-decoration:none;color:inherit">			12. Constraints</a></td> </tr>
+    		<tr> <td class="mdl-data-table__cell--non-numeric"><a href="13.html" style="text-decoration:none;color:inherit">			13. Joins</a></td> </tr>
+    		<tr> <td class="mdl-data-table__cell--non-numeric"><a href="14.html" style="text-decoration:none;color:inherit">			14. Synonyms</a></td>	</tr>
+		<tr> <td class="mdl-data-table__cell--non-numeric"><a href="15.html" style="text-decoration:none;color:inherit">			15. Views</a></td></tr>
+    		<tr> <td class="mdl-data-table__cell--non-numeric"><a href="16.html" style="text-decoration:none;color:inherit">			16. Indexes</a></td> </tr>
+    		<tr> <td class="mdl-data-table__cell--non-numeric"><a href="17.html" style="text-decoration:none;color:inherit">			17. Clusters</a></td> </tr>
+  		<tr> <td class="mdl-data-table__cell--non-numeric"><a href="18.html" style="text-decoration:none;color:inherit">			18. Sequences</a></td> </tr>
+		<tr> <td class="mdl-data-table__cell--non-numeric"><a href="19.html" style="text-decoration:none;color:inherit">			19. Sub Queries</a></td> </tr>
+		</tbody>
+		</table>
+	
+		<table class="mdl-data-table mdl-js-data-table mdl-data-table--selectable mdl-shadow--2dp" style="position:absolute;margin-top:-927px;margin-left:410px;width:925px;">
+  		<thead> </thead>
+  		<tbody>
+    		<tr> <td class="mdl-data-table__cell--non-numeric"><center><font size="5"><b>10. Date & Conversion Functions</b></font></center></td></tr>
+		</tbody>
+		</table>
+		
+		<div class="page-content" style="position:absolute;margin-top:-880px;margin-left:395px;margin-bottom:50px;width:900px;">
+		<div class="mdl-grid">
+		<div class="mdl-cell mdl-cell--10col" >
+		<div class="mdl-card mdl-shadow--2dp demo-card" style="height:auto">
+	<p>	
+	<pre>
+   	<b>NUMBER FUNCTIONS</b>
+
+	<b>i. POWER (M,N)</b>
+		•Synt: select power (25, 2 ) from dual;
+	 	DUAL:
+		•It is a dummy table provided by oracle engine
+		a.It has only one column associated with varchar datatype 
+	
+	<b>ii. SQRT (M)</b>
+		•Select sqrt (625 ) from dual;
+
+	<b>iii. MOD (M, N)</b>
+		•Select mod (5, 2) from dual;
+	
+	<b>iv. ASCII (C)</b>
+		•Select ascii (‘a’) from dual;
+	
+	<b>v. CEIL (M)</b>
+		•It displays the next highest value
+		•Synt: select ceil(12.45) from dual;
+	
+	<b>vi. FLOOR (M)</b>
+		•It displays the next lowest value
+		•Synt: select floor(13.65) from dual;
+	
+	<b>vii. ROUND (M, N)</b>
+		•It rounds the value up to given no.of position. That is if last eliminating value is >=5 then it simply add one value to the left adjacent value.
+		•It check the condition
+		•Synt: select round(15.2345, 2) from dual; 
+
+	<b>viii. TRUNC (M, N)</b>
+		•It is similar to round ,but it doesn’t check the condition
+		•Select trunk(12.562, 2) from dual;
+
+
+
+
+	<b>STRING FUNCTIONS</b>
+
+	<b>i. LENGTH (S)</b>
+		•It is used to display the number of characters in a given string
+		•Synt: select length(‘ebs’) from dual;
+ 
+	<b>ii. REVERSE (S)</b>
+		•It is use to reverse the given string
+		•Synt: select reverse(‘ebs’) from dual;
+
+	<b>iii. UPPER (S)</b>
+		•It is used to convert the string to upper characters
+		•Synt: select upper(‘ebs’) from dual;
+
+ 	<b>iv. LOWER (S)</b>
+		•It is used to convert the string to lower characters
+		•Synt: select lower(‘ebs’) from dual;
+
+	<b>v. INITCAP</b>
+		•It is used to convert the first character into upper character in a given string
+		•Synt: select initcap(‘ebs’) from dual;
+
+	<b>vi. CONCAT (s1, s2)</b>
+		•It is used to merge the two strings ,and we have to use the ‘||’ symbol
+		•Synt: select concat(‘ebs’,’solutions’) from dual;
+		•Synt: select ‘ebs’||’business’||’solution’ from dual
+
+	<b>vii. LTRIM (S, C)</b>
+		•It is used to remove the character from the left end of the given string, if the character is found
+		•Select ltrim(‘ebs’,’e’) from dual;
+
+	<b>viii. RTRIM (S, C)</b>
+		•It is used to remove the character from the right end of the given string, if the character is found
+		•Select  rtrim(‘ebs’,’s’) from dual;
+
+	<b>ix. TRIM </b>
+		•It is used to remove the character from both sides of the given string,
+		•Synt: select trim(‘e’ from ‘ebse’) from dual;
+
+	<b>x. LPAD</b>
+		•It is used to add character from left end
+		•Select lpad(‘ebs’,5,’&’) from dual;
+
+	<b>xi. RPAD</b>
+		•It is used to add character from right end
+		•Select rpad(‘ebs’,7,’&’) from dual;
+
+	<b>xii. TRANSLATE (S, C, C)</b>
+		•It is used to translate the string character wise
+		•It is not possible to translate the entire string
+		•Select translate (‘welcome’, ’w’, ’t’) from dual;
+		•Select translate (‘india’,’id’,’xy’) from dual
+
+	<b>xiii. REPLACE (S, S, S)</b>
+		•It is used to replace entire string
+		•It is not possible to replace more than one string
+		•Synt: select replace(‘e business solutions’, ’business’, ’b’) from dual;
+		•Select replace (‘india’,’id’,’xy’) from dual
+
+	<b>xiv. DECODE (column, condition, do),……………column)</b>
+		•It is used to replace more than one string
+		•It works like ‘if condition’ but is doesn t allow the relational operaters 
+		•Select job,decode (job, ’manager’, ’mgr’, ’clerk’,’ clk’) from emp
+		•Select job,decode (job, ’manager’, ’mgr’, ’clerk’,’ clk’,job) from emp
+
+	<b>xv.CASE(when condition then result else default value)</b>
+		•It is used to replace more than one string by using relational operater
+		•Select job, 
+    		case job 
+	    	when ‘manager’ then ‘mgr’ 
+    		else ‘job’ 
+	    	end case 
+    		from emp;
+
+	<b>xvi.SUBSTR (S, C, N)</b>
+		•It is used to display the set of characters from a given string
+		•S= string
+		•C=cursor position @
+		•N= no.of characters
+		•Synt: select substr(‘welcome’,1,3) from dual;
+
+	<b>xvii. INSTR (S, C, C, N)</b>
+		•It is used to display the position of a given character
+		•S= string
+		•C= character
+		•C=cursor position @
+		•N= occurance
+		•Synt: select instr(‘welcome’,’e’,1,1) from dual;
+
+	<b>xviii. COALESCE</b>
+		•This will give the first non-null string
+		•EX: select coalesce (‘a’,’b’,’c’),coalesce(‘null’,’a’,’null’) from dual
+		•o/p: Coalesce		coalesce
+		•       a         		 a
+
+
+	
+	
+
+	</pre>					
+	</p>
+
+</div></div></div></div>
+</main>
+
+		<footer class="mdl-mini-footer"  style="margin-top:2000px;">
+			<div class="mdl-mini-footer--left-section" style="margin-top:-15px;">
+				<div class="mdl-logo"><b>Fallow us on</b></div>
+				<ul class="mdl-mini-footer--link-list" style="margin-top:-15px;margin-left:105px;">
+					<li><a href="https://facebook.com/c4c.ady" style="text-decoration:none;">	<img src="../../../images/facebook.png" 	width="35" height="35" onmouseover="this.src='../../../images/social/facebook.png'" onmouseout="this.src='../../../images/facebook.png'" style="position:relative;bottom:-12px"></a></li>
+					<li><a href="https://twitter.com/c4c_ady" style="text-decoration:none;">   	<img src="../../../images/twitter.png" 	width="35" height="35" onmouseover="this.src='../../../images/social/twitter.png'" onmouseout="this.src='../../../images/twitter.png'" style="position:relative;bottom:-12px"></a>  </li>
+					<li><a href="https://www.youtube.com/channel/UCDjj2kpaHyDbC9jpD1tEJ4Q" >	<img src="../../../images/youtube.png"  	width="35" height="35" onmouseover="this.src='../../../images/social/youtube.png'" onmouseout="this.src='../../../images/youtube.png'" style="position:relative;bottom:-12px"></a></li>
+					<li><a href="https://instagram.com/c4c_ady" style="text-decoration:none;">	<img src="../../../images/instagram.png" width="35" height="35" onmouseover="this.src='../../../images/social/instagram.png'" onmouseout="this.src='../../../images/instagram.png'" style="position:relative;bottom:-12px"></a></li>
+				</ul>
+			</div>
+		</footer>
+	
+</div>
+
+</body>
+</html>

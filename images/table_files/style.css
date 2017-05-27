@@ -1,0 +1,77 @@
+p, table, tr, td, li, dt, dd, 
+h1, h2, h3, h4, h5, ol, ul, th,
+blockquote, div, span, .topnav {font-family:Verdana,Arial,sans-serif; 
+                                font-size:small}
+.topnav { font-weight: bold; font-size:8pt;}
+.topnav A:link    {color: #006600; text-decoration: none;}
+.topnav A:visited {color: #666666; text-decoration: none;}
+.topnav A:active  {color: #006600; text-decoration: none;}
+.topnav A:hover   {color: #0000EE; text-decoration: none;}
+h1 {font-size:24px; font-weight:bold}
+h2, h2 p {font-size:18px; font-weight:bold}
+h3 {font-size:14px; font-weight:bold}
+.leftnav {font-size:xx-small}
+code {font-family:Courier, monospace; color:#006600}
+pre  {margin-left:15px; font-size:small;}
+
+
+.marketplace_container br{
+  display: none;
+}
+
+.marketplace_container td{
+    text-align: center;
+    vertical-align: top;
+}
+
+#partners {font-family: Verdana,Arial,sans-serif; font-size:small; color: #298023;}
+#partners a:link, #partners a {font-family:Verdana,Arial,sans-serif; font-size:small; color: #298023;}
+#partners a:hover {text-decoration: none;}
+
+#sitemap {
+    overflow:auto;
+    width:98%;
+    padding:0 0 20px 20px;
+}
+#sitemap a:link, #sitemap a:visited {
+    color: #000;
+}
+#sitemap ul {
+    margin:0;
+    padding:0;
+}
+#sitemap li {
+    list-style-type:none;
+    margin:0;
+    padding:2px 0;
+}
+.sitemapcol {
+    float: left;
+    padding-right:25px;
+}
+div.wrapper{
+	padding: 10px;
+}
+#ewgtcontainer{
+	display: none;
+}
+ul#cp_links{
+	padding: 0;
+}
+
+#ciuadposition{
+ border: 0 none;
+ display: table;
+ float: left;
+ margin: 3px 0;
+ width:75%;
+ /*width: 815px;*/
+}
+.ciu_wrapper{
+	float: left;
+	width: 49%;
+	padding: 2px;
+}
+.ciu_wrapper div {
+    padding: 10px;
+}

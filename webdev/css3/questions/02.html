@@ -1,0 +1,170 @@
+<html>
+<head>
+<title>CSS3 - Questions</title>
+<script type="text/javascript" src="../../../js/jquery-3.1.0.min.js"></script>
+<script type="text/javascript">
+$(document).ready(function(e){
+	$('div main nav ul li').click(function(){
+		$(this).toggleClass('tap');
+	});
+});
+
+</script>
+<link rel="shortcut icon" href="../../../images/icon.ico" type="image/ico">
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+<link rel="stylesheet" href="https://code.getmdl.io/1.1.3/material.light_blue-orange.min.css" />
+<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:300,400,500,700" type="text/css">
+<script defer src="../../../mdl/material.min.js"></script>
+<style>
+	.demo-card.mdl-card{width:950px;overflow:hidden;text-decoration:none;}
+	.demo-card > .mdl-card__title{color:#fff;height:auto;background:url('images/oracle.png') center/cover;text-decoration:none;}
+	.demo-card > .mdl-card__title a{color: inherit;text-decoration:none;}
+	.demo-card > .mdl-card__menu{color:#fff;text-decoration:none;}	
+	pre{font-family:inherit;font-size:15px}
+	p{margin:0px;padding:0px;}
+	.mdl-layout mdl-js-layout mdl-layout--fixed-header mdl-mini-footer{margin-bottom:0px;clear:both;}
+	footer img:hover{transform:scale(1.2)}
+
+</style>
+<style>.arrow{float:left}</style>
+<style>
+*{padding:0;margin:0;}	
+a{text-decoration:none;}
+	li{list-style:none;}
+	div main nav{width:300px;background:white;box-shadow: 0px 0px 3px;}
+	div main nav ul ul {background:#fee084}
+	div main nav ul ul a:before{content:'\203A';margin-right:20px;}
+	div main nav a{display:block; padding: 10px 0 10px 20px;color:black;border-bottom:1.5px solid black}
+	div main nav a:hover{background:#03A9F4;}
+	div main nav ul ul{display:none}
+	div main nav ul li:hover ul{display:block}
+	div main nav ul span:after{content:'\203A';float:right;margin-right:20px;-webkit-transform:rotate(90deg);-moz-transform:rotate(90deg)}
+</style>
+<style>
+pre.prettyprint.tryit {min-height:37px;margin-left:10px;margin-right:10px;font-family:calibri; background: #eee url(/html/images/try-it.jpg) top right no-repeat !important}div.feature-box div.feature-box-icon, .col-md-3 .course-box, li.heading, div.footer-copyright { background: #88c53a url(/images/pattern.png) repeat center center !important;}
+.sub-main-menu .sub-menuu div:hover, .sub-main-menu .viewall, header nav ul.nav-main li a:hover, button.btn-responsive-nav, header div.search button.btn-default { background: #88c53a !important;}
+.submenu-item{ border-bottom: 2px solid #88c53a !important; border-top: 2px solid #88c53a !important; }
+</style>
+</head>
+
+<body>
+		<div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+
+		<header class="mdl-layout__header">
+			<div class="mdl-layout__header-row">
+				<span class="mdl-layout-title"><a href="../../../index.html"><img src="../../../images/icon.ico" width="50" height="50"></a></span>
+				<div class="mdl-layout-spacer"></div>			
+			</div>
+		</header>
+
+		<div class="mdl-layout__drawer" style="margin-left:-38px;width:280px">
+			<span class="mdl-layout-title"><img src="../../../images/banner.png" width="240" height="65"></span>.
+			<nav class="mdl-navigation" style="margin-left=-20px">
+				<a class="mdl-navigation__link" href="../../../c.html">		<img src="../../../images/logo/c.png" width="35" height="35">   C LANGUAGE</a>
+				<a class="mdl-navigation__link" href="../../../c++.html">	<img src="../../../images/logo/c++.png" width="35" height="35">    C++ PROGRAMING</a>
+				<a class="mdl-navigation__link" href="../../../java.html">	<img src="../../../images/logo/java.png" width="35" height="35">  JAVA</a>
+				<a class="mdl-navigation__link" href="../../../oracle.html"><img src="../../../images/logo/oracle.png" width="30" height="30"> ORACLE</a>
+				<a class="mdl-navigation__link" href="../../../python.html"><img src="../../../images/logo/python.png" width="30" height="30"> PYTHON</a>
+				<a class="mdl-navigation__link" href="../../../webdev.html"><img src="../../../images/logo/webdev.png" width="35" height="35"> WEB DEVELOPMENT</a>
+				<a class="mdl-navigation__link" href="../../../oracle_ebs/docs/00.html"><img src="../../../images/logo/o_ebs.png" width="35" height="35"> ORACLE_EBS</a>
+			</nav>
+		</div>
+	<main>	
+		<table class="mdl-data-table mdl-js-data-table mdl-data-table--selectable mdl-shadow--2dp" style="position:absolute;margin-top:25px;margin-left:150px;width:955px;">
+  		<thead> </thead>
+  		<tbody>
+    		<tr> <td class="mdl-data-table__cell--non-numeric"><center><font size="5"><b>CSS3 Interview Questions</b></font></center></td></tr>
+		</tbody>
+		</table>
+		
+		<div class="page-content" style="position:static;margin-top:70px;margin-left:135px;margin-bottom:50px">
+		<div class="mdl-grid">
+		<div class="mdl-cell mdl-cell--10col" style="width:1500px;">
+		<div class="mdl-card mdl-shadow--2dp demo-card" style="height:auto">
+	<p>	
+	<pre>
+   	
+	<b><font color="red">12. What are the various techniques for clearing floats?</font></b>
+	Use a clearfix.
+	Float the parent as well.
+	Use an overflow property other than “visible” on the parent (bonus points for listing downsides like cutting off shadows).
+	
+	<b><font color="red">13. What are sprites and why would use them? How do you go about creating them? What are possible alternatives to sprites?</font></b>
+	Sprites are essentially multiple images combined into one. Performance is the reason that they are used. HTTP requests will be 
+	reduced which will result in faster loading of the pages.
+	Use online tools, Photoshop (Takes time), Spriting with Compass	
+	
+	<b><font color="red">14. What do you mean by responsive design?</font></b>
+	It’s about making websites work on different platforms/devices. Different devices with different sizes and different capabilities. 
+	Responsive design is about taking one code base and making it work for all of them. Media queries used for achieving this.
+	
+	<b><font color="red">15. What is the difference between CSS and CSS3 ?</font></b>
+	CSS3 is upgreaded version of CSS with new future like Selectors,Box Model, gradient backgrounds, multiple background, Text Effects,
+	2D/3D Transformations, Animations, Multiple Column Layout etc…
+	
+	<b><font color="red">16. How to create Rounded Corners using css3? Give example</font></b>
+	<pre class="prettyprint notranslate tryit">
+		div{
+		border:2px solid #ff0000;
+		border-radius:25px;
+		-moz-border-radius:25px; /* Firefox */
+		-webkit-border-radius:25px; /* Chrome and Safari */
+		-o-border-radius:25px; /* Opera */</pre>
+	
+	<b><font color="red">17. What is the CSS3 background size Property? How to use it?</font></b>
+	The background­size property specifies the size of the background image.
+	<pre class="prettyprint notranslate tryit">
+		.myClass {
+		background:url(background.jpg);
+		-moz-background-size:80px 60px; /* Firefox 3.6 */
+		background-size:80px 60px; /* or we can do  background-size:100% 100%;*/
+		background-repeat:no-repeat;
+		}</pre>
+	
+	<b><font color="red"> 18. What is the word wrap in CSS3 ?</font></b>
+	To Allow long words to be able to break and wrap onto the next line in css3 we used wordwrap property like below class
+	.wordwrappcds{word-wrap:break-word;}
+
+	<b><font color="red">19. What CSS3 box­sizing Property?</font></b>
+	The box­sizing property is used to tell the browser what the sizing properties (width and height) should include. box­sizing to 
+	“border­box” forces the browser to render the box with the specified width and height, and place the border and padding inside the box.
+	
+	<b><font color="red">20. What is CSS3 backface­visibility Property?</font></b>
+	The backface­visibility property defines whether or not an element should be visible when not facing the screen.This property is useful
+	 when an element is rotated, and you do not want to see its backside.
+	
+	<b><font color="red">21. What are the values for postion property in css? What is the difference?</font></b>	
+	Static: Default value. Elements render in order, as they appear in the document flow 
+	Absolute: The element is positioned relative to its first positioned (not static) ancestor 	element
+	Fixed: The element is positioned relative to the browser window
+	Relative: The element is positioned relative to its normal position, so “left:20” adds 20 pixels to the element’s LEFT position.
+	
+	<b><font color="red">22. What are the different font units in CSS?</font></b>
+	px, em, rem, %
+
+
+	<a href="01.html" style="text-decoration:none;">;<img src="../../../images/back.png"  width="75" height="40" style="positoin:absolute;margin-left:0px"></a>
+
+	</pre>					
+	</p>
+
+
+</main>
+
+		<footer class="mdl-mini-footer"  style="margin-top:140px;">
+			<div class="mdl-mini-footer--left-section" style="margin-top:-15px;">
+				<div class="mdl-logo"><b>Fallow us on</b></div>
+				<ul class="mdl-mini-footer--link-list" style="margin-top:-15px;margin-left:105px;">
+					<li><a href="https://facebook.com/c4c.ady" style="text-decoration:none;">	<img src="../../../images/social/facebook.png" 	width="35" height="35" 	 style="position:relative;bottom:-12px"></a></li>
+					<li><a href="https://twitter.com/c4c_ady" style="text-decoration:none;">   	<img src="../../../images/social/twitter.png" 	width="35" height="35"   style="position:relative;bottom:-12px"></a>  </li>
+					<li><a href="https://www.youtube.com/channel/UCDjj2kpaHyDbC9jpD1tEJ4Q" >	<img src="../../../images/social/youtube.png"  	width="35" height="35"   style="position:relative;bottom:-12px"></a></li>
+					<li><a href="https://instagram.com/c4c_ady" style="text-decoration:none;">	<img src="../../../images/social/instagram.png" 	width="35" height="35" 	 style="position:relative;bottom:-12px"></a></li>
+				</ul>
+			</div>
+		</footer>
+
+	
+</div>
+
+</body>
+</html>

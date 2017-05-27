@@ -1,0 +1,180 @@
+<html>
+<head>
+<title>JS - Questions</title>
+<script type="text/javascript" src="../../../js/jquery-3.1.0.min.js"></script>
+<script type="text/javascript">
+$(document).ready(function(e){
+	$('div main nav ul li').click(function(){
+		$(this).toggleClass('tap');
+	});
+});
+
+</script>
+<link rel="shortcut icon" href="../../../images/icon.ico" type="image/ico">
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+<link rel="stylesheet" href="https://code.getmdl.io/1.2.1/material.lime-yellow.min.css" />
+<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:300,400,500,700" type="text/css">
+<script defer src="../../../mdl/material.min.js"></script>
+<style>
+	.demo-card.mdl-card{width:950px;overflow:hidden;text-decoration:none;}
+	.demo-card > .mdl-card__title{color:#fff;height:auto;background:url('images/oracle.png') center/cover;text-decoration:none;}
+	.demo-card > .mdl-card__title a{color: inherit;text-decoration:none;}
+	.demo-card > .mdl-card__menu{color:#fff;text-decoration:none;}	
+	pre{font-family:inherit;font-size:15px}
+	p{margin:0px;padding:0px;}
+	.mdl-layout mdl-js-layout mdl-layout--fixed-header mdl-mini-footer{margin-bottom:0px;clear:both;}
+	footer img:hover{transform:scale(1.2)}
+
+</style>
+<style>.arrow{float:left}</style>
+<style>
+*{padding:0;margin:0;}	
+a{text-decoration:none;}
+	li{list-style:none;}
+	div main nav{width:300px;background:white;box-shadow: 0px 0px 3px;}
+	div main nav ul ul {background:#fee084}
+	div main nav ul ul a:before{content:'\203A';margin-right:20px;}
+	div main nav a{display:block; padding: 10px 0 10px 20px;color:black;border-bottom:1.5px solid black}
+	div main nav a:hover{background:#03A9F4;}
+	div main nav ul ul{display:none}
+	div main nav ul li:hover ul{display:block}
+	div main nav ul span:after{content:'\203A';float:right;margin-right:20px;-webkit-transform:rotate(90deg);-moz-transform:rotate(90deg)}
+</style>
+<style>
+pre.prettyprint.tryit {min-height:37px;margin-left:10px;margin-right:10px;font-family:calibri; background: #eee url(/html/images/try-it.jpg) top right no-repeat !important}div.feature-box div.feature-box-icon, .col-md-3 .course-box, li.heading, div.footer-copyright { background: #88c53a url(/images/pattern.png) repeat center center !important;}
+.sub-main-menu .sub-menuu div:hover, .sub-main-menu .viewall, header nav ul.nav-main li a:hover, button.btn-responsive-nav, header div.search button.btn-default { background: #88c53a !important;}
+.submenu-item{ border-bottom: 2px solid #88c53a !important; border-top: 2px solid #88c53a !important; }
+</style>
+</head>
+
+<body>
+		<div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+
+		<header class="mdl-layout__header">
+			<div class="mdl-layout__header-row">
+				<span class="mdl-layout-title"><a href="../../../index.html"><img src="../../../images/icon.ico" width="50" height="50"></a></span>
+				<div class="mdl-layout-spacer"></div>			
+			</div>
+		</header>
+
+		<div class="mdl-layout__drawer" style="margin-left:-38px;width:280px">
+			<span class="mdl-layout-title"><img src="../../../images/banner.png" width="240" height="65"></span>.
+			<nav class="mdl-navigation" style="margin-left=-20px">
+				<a class="mdl-navigation__link" href="../../../c.html">		<img src="../../../images/logo/c.png" width="35" height="35">   C LANGUAGE</a>
+				<a class="mdl-navigation__link" href="../../../c++.html">	<img src="../../../images/logo/c++.png" width="35" height="35">    C++ PROGRAMING</a>
+				<a class="mdl-navigation__link" href="../../../java.html">	<img src="../../../images/logo/java.png" width="35" height="35">  JAVA</a>
+				<a class="mdl-navigation__link" href="../../../oracle.html"><img src="../../../images/logo/oracle.png" width="30" height="30"> ORACLE</a>
+				<a class="mdl-navigation__link" href="../../../python.html"><img src="../../../images/logo/python.png" width="30" height="30"> PYTHON</a>
+				<a class="mdl-navigation__link" href="../../../webdev.html"><img src="../../../images/logo/webdev.png" width="35" height="35"> WEB DEVELOPMENT</a>
+				<a class="mdl-navigation__link" href="../../../oracle_ebs/docs/00.html"><img src="../../../images/logo/o_ebs.png" width="35" height="35"> ORACLE_EBS</a>
+			</nav>
+		</div>
+	<main>	
+		<table class="mdl-data-table mdl-js-data-table mdl-data-table--selectable mdl-shadow--2dp" style="position:absolute;margin-top:25px;margin-left:150px;width:955px;">
+  		<thead> </thead>
+  		<tbody>
+    		<tr> <td class="mdl-data-table__cell--non-numeric"><center><font size="5"><b>JavaScript Interview Questions</b></font></center></td></tr>
+		</tbody>
+		</table>
+		
+		<div class="page-content" style="position:static;margin-top:70px;margin-left:135px;margin-bottom:50px">
+		<div class="mdl-grid">
+		<div class="mdl-cell mdl-cell--10col" style="width:1500px;">
+		<div class="mdl-card mdl-shadow--2dp demo-card" style="height:auto">
+	<p>	
+	<pre>
+   	
+	<b><font color="red">41. What is break and continue statements?</font></b>
+
+	Break statement exits from the current loop.
+	Continue statement continues with next statement of the loop.
+
+	<b><font color="red">42. What are the two basic groups of dataypes in JavaScript?</font></b>
+	
+	They are as –
+	-Primitive
+	-Reference types.
+	-Primitive types are number and Boolean data types. Reference types are more complex types like strings and dates.
+
+	<b><font color="red">43. How generic objects can be created?</font></b>
+
+	Generic objects can be created as:
+	<pre class="prettyprint notranslate tryit">
+	var I = new object();</pre>
+
+	<b><font color="red">44. What is the use of type of operator?</font></b>
+
+	‘Typeof’ is an operator which is used to return a string description of the type of a variable.
+	
+	<b><font color="red">45. Which keywords are used to handle exceptions?</font></b>
+
+	Try… Catch—finally is used to handle exceptions in the JavaScript
+	<pre class="prettyprint notranslate tryit">
+	Try{
+	Code
+	}
+
+	Catch(exp){
+	Code to throw an exception
+	}
+
+	Finally{
+	Code runs either it finishes successfully or after catch
+	}</pre>
+	
+	<b><font color="red">46. Which keyword is used to print the text in the screen?</font></b>
+
+	document.write(“Welcome”) is used to print the text – Welcome in the screen.
+
+	<b><font color="red">47. What is the use of blur function?</font></b>
+
+	Blur function is used to remove the focus from the specified object.
+
+	<b><font color="red">48. What is variable typing?</font></b>
+
+	Variable typing is used to assign a number to a variable and then assign string to the same variable. Example is as follows:
+	<pre class="prettyprint notranslate tryit">
+	i= 8;
+	i=”john”;</pre>
+
+	<b><font color="red">49. How to find operating system in the client machine using JavaScript?</font></b>
+
+	The ‘Navigator.appversion’ is used to find the name of the operating system in the client machine.
+
+	<b><font color="red">50. What are the different types of errors in JavaScript?</font></b>
+
+	There are three types of errors:
+
+	<b>-Load time errors:</b> Errors which come up when loading a web page like improper syntax errors are known as Load time errors and
+	it generates
+	the errors dynamically.
+	<b>-Run time errors:</b> Errors that come due to misuse of the command inside the HTML language.
+	<b>-Logical Errors:</b> These are the errors that occur due to the bad logic performed on a function which is having different 
+	operation.
+		
+	<a href="04.html" style="text-decoration:none;">;<img src="../../../images/back.png"  width="75" height="40" style="positoin:absolute;margin-left:0px;"></a>
+	<a href="06.html" style="text-decoration:none;">;<img src="../../../images/next.png"  width="75" height="40" style="positoin:absolute;margin-left:770px;margin-top:-48px"></a>
+
+	</pre>					
+	</p>
+
+
+</main>
+
+		<footer class="mdl-mini-footer"  style="margin-top:140px;">
+			<div class="mdl-mini-footer--left-section" style="margin-top:-15px;">
+				<div class="mdl-logo"><b>Fallow us on</b></div>
+				<ul class="mdl-mini-footer--link-list" style="margin-top:-15px;margin-left:105px;">
+					<li><a href="https://facebook.com/c4c.ady" style="text-decoration:none;">	<img src="../../../images/social/facebook.png" 	width="35" height="35" 	 style="position:relative;bottom:-12px"></a></li>
+					<li><a href="https://twitter.com/c4c_ady" style="text-decoration:none;">   	<img src="../../../images/social/twitter.png" 	width="35" height="35"   style="position:relative;bottom:-12px"></a>  </li>
+					<li><a href="https://www.youtube.com/channel/UCDjj2kpaHyDbC9jpD1tEJ4Q" >	<img src="../../../images/social/youtube.png"  	width="35" height="35"   style="position:relative;bottom:-12px"></a></li>
+					<li><a href="https://instagram.com/c4c_ady" style="text-decoration:none;">	<img src="../../../images/social/instagram.png" 	width="35" height="35" 	 style="position:relative;bottom:-12px"></a></li>
+				</ul>
+			</div>
+		</footer>
+
+	
+</div>
+
+</body>
+</html>
